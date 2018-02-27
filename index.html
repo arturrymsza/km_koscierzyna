@@ -8,6 +8,38 @@
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
+		<header>
+			
+		</header>
+		<main>
+			<section class="name">
+				<h1>Rozkład Jazdy</h1>
+				<h2>Komunikacji Miejskiej</h2>
+				<h3>w Kościerzynie</h3>
+			</section>
+			<section class="check">
+				<h2>Wybierz swój przystanek, linię i kierunek</h2>
+				<select id="selection">
+					<option value = "rogali">rogali</option>
+					<option value = "szpital">szpital</option>
+					<option value = "biedronka">skłodowskiej biedronka</option>
+				</select>
+				<select id="line">
+					<option value = "1">linia 1</option>
+					<option value = "2">linia 2</option>
+				</select>
+				<select id="direction">
+					<option value = "szpital">szpital</option>
+					<option value = "pkp">dworzec pkp</option>
+				</select>
+				<button id="check_bus">sprawdź</button>
+			</section>
+			<section class="result">
+				<h3>najbliższy autobus odjeżdża o godzinie:</h3>
+				<h2 id="your_bus"></h2>
+				<h4></h4>
+			</section>
+		</main>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
