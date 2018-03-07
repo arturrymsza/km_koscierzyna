@@ -15,6 +15,7 @@ var checkBus = document.getElementById('check_bus');
 if (weekDay > 0 && weekDay < 6) {
   var szpital1pkp = ['6:10', '7:15', '7:35', '7:55', '8:45', '11:30', '14:10', '15:10', '15:55', '16:50', '19:10'];
   var rogali1szpital = ['5:41', '6:32', '7:52', '8:32', '10:47', '13:07', '13:35', '14:27', '14:37', '15:29', '16:27', '20:12'];
+  var dayType = "dni robocze";
 };
 
 if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || holiday === "13" || holiday === "23" || holiday === "14"
@@ -23,6 +24,7 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
 
   var szpital1pkp = ['7:55', '13:15', '16:55', '19:10'];
   var rogali1szpital = ['6:30', '9:42', '13:06', '16:25'];
+  var dayType = "soboty, niedziele i święta";
 };
 
 checkBus.addEventListener('click', timetable);
@@ -42,5 +44,19 @@ function timetable() {
   }
   
  yourBus.innerHTML = ht + ':' + mt;
- console.log(stop);
+ allBusses();
+}
+
+function allBusses() {
+  var busses = document.getElementById('busses');
+  var bussesHeader = document.getElementById('busses_header');
+  var bussesTimetable = document.getElementById('busses_timetable');
+  var i;
+  for (i = 1; i < 7; i++) { 
+    var allLines = window[selection.value + [i] + direction.value];
+    if (allLines == undefined) {break;}
+    bussesHeader.innerHTML = "Wszystkie autobusy odjeżdżające w " + dayType + " z tego przystanku";
+    busses.innerHTML = "linia nr " + [i];
+    bussesTimetable.innerHTML = allLines;
+  }
 }
