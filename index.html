@@ -8,15 +8,13 @@
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
-		<header>
-			
+		<header class="name container">
+			<h1>Rozkład Jazdy</h1>
+			<img src="img/logo.png" alt="logo autobus pod lipą">
+			<h2>Komunikacji Miejskiej</h2>
+			<h2>w Kościerzynie</h2>
 		</header>
-		<main>
-			<section class="name">
-				<h1>Rozkład Jazdy</h1>
-				<h2>Komunikacji Miejskiej</h2>
-				<h3>w Kościerzynie</h3>
-			</section>
+		<main class="container">
 			<section class="check">
 				<h2>Wybierz swój przystanek, linię i kierunek</h2>
 				<select id="selection">
@@ -36,10 +34,13 @@
 			</section>
 			<section class="result">
 				<h3>najbliższy autobus odjeżdża o godzinie:</h3>
-				<h2 id="your_bus"></h2>
-					<div id="busses_list">
-						<h3 id="busses_header"></h3>
-					</div>
+				<h2 id="your_bus"></h2>	
+				<p id="period"></p>
+			</section>
+			<section id="whole_timetable">
+				<div id="busses_list">
+					<h3 id="busses_header"></h3>
+				</div>
 			</section>
 		</main>
 		<script type="text/javascript" src="js/script.js"></script>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+$background: #222222;
+$text-color: #3ba66d;
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+body {
+	height: 100vh;
+	font-family: 'Lato', sans-serif;
+	background: linear-gradient(to top, #383838 , $background);
+	color: $text-color;
+
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			padding: 5vh 0 2vh;
+			font-size: 4vw;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			font-weight: 300;
+		}
+
+		img {
+			padding: 2vh;
+			width: 15%;
+			border-radius: 20%;
+		}
+
+		h2 {
+			padding: 1.4vh;
+			font-size: 1.5vw;
+			letter-spacing: 0.5vw;
+		}
+	}
+}
