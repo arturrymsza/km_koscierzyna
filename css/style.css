@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   font-family: 'Lato', sans-serif;
-  background: linear-gradient(to top, #383838, #222222);
+  background: linear-gradient(to top, #4e4e4e, #222222);
   color: #3ba66d; }
   body header {
     display: -ms-flexbox;
@@ -32,3 +32,33 @@ body {
       padding: 1.4vh;
       font-size: 1.5vw;
       letter-spacing: 0.5vw; }
+  body .check {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 3vh; }
+    body .check h2 {
+      color: #ffff66;
+      padding: 2vh;
+      font-size: 1vw; }
+    body .check .choice {
+      padding: 1vh;
+      overflow: hidden; }
+      body .check .choice select {
+        border-radius: 1vh;
+        font-size: 2vw;
+        text-align: center; }
+        body .check .choice select option {
+          padding: 5px; }
+  body .result {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+    body .result .your_time {
+      font-size: 10vw; }

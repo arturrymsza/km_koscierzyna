@@ -12,7 +12,7 @@ $text-color: #3ba66d;
 body {
 	height: 100vh;
 	font-family: 'Lato', sans-serif;
-	background: linear-gradient(to top, #383838 , $background);
+	background: linear-gradient(to top, #4e4e4e , $background);
 	color: $text-color;
 
 	header {
@@ -39,6 +39,44 @@ body {
 			padding: 1.4vh;
 			font-size: 1.5vw;
 			letter-spacing: 0.5vw;
+		}
+	}
+
+	.check {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 3vh;
+
+		h2 {
+			color: #ffff66;
+			padding: 2vh;
+			font-size: 1vw;
+		}
+
+		.choice {
+			padding: 1vh;
+			overflow: hidden;
+
+			select {
+				border-radius: 1vh;
+				font-size: 2vw;
+				text-align: center;
+
+				option {
+					padding: 5px;
+				}
+			}
+		}
+	}
+
+	.result {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.your_time {
+			font-size: 10vw;
 		}
 	}
 }
