@@ -11,6 +11,8 @@ var line = document.getElementById('line');
 var direction = document.getElementById('direction');
 var checkBus = document.getElementById('check_bus');
 var period = document.getElementById('period');
+var timetableModal = document.getElementById('timetable_modal');
+var timetableContent = document.getElementById('timetable_content');
 
 
 if (weekDay > 0 && weekDay < 6) {
@@ -78,6 +80,8 @@ function allBusses() {
     var header = document.createElement("h4");
     var newParagraph = document.createElement("p")
     var textHeader = document.createTextNode("linia nr " + [i]);
+    header.className = 'lines';
+    newParagraph.className = 'hours';
     
     header.appendChild(textHeader);
     bussesList.appendChild(header);
@@ -103,6 +107,8 @@ function difPeriod() {
     var header = document.createElement("h4");
     var newParagraph = document.createElement("p")
     var textHeader = document.createTextNode("linia nr " + [i]);
+    header.className = 'lines';
+    newParagraph.className = 'hours';
     
     header.appendChild(textHeader);
     bussesList.appendChild(header);
@@ -112,8 +118,23 @@ function difPeriod() {
 }
 
 function checkWhole() {
+  var closeModal = document.getElementById('close_modal');
+
+  timetableModal.style.display = "block";
   allBusses();
   difPeriod();
+  closeModal.addEventListener('click', closeWindow);
+  }
+
+function closeWindow() {
+  var bussesList = document.getElementById('busses_list');
+  var hours = bussesList.getElementsByClassName('hours');
+  var lines = bussesList.getElementsByClassName('lines');
+  timetableModal.style.display = "none";
+  console.log(hours);
+  hours.innerHTML = "";
+  lines.innerHTML = "";
 }
+
 
 checkBus.addEventListener('click', timetable);
