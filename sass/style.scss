@@ -2,6 +2,7 @@
 
 $background: #222222;
 $text-color: #3ba66d;
+$yellow: #ffff66;
 
 .container {
 	width: 100%;
@@ -49,7 +50,7 @@ body {
 		padding: 3vh;
 
 		h2 {
-			color: #ffff66;
+			color: $yellow;
 			padding: 2vh;
 			font-size: 1vw;
 		}
@@ -67,6 +68,15 @@ body {
 					padding: 5px;
 				}
 			}
+		}
+
+		.check_bus {
+			background-color: transparent;
+			border: 2px solid $yellow;
+			color: $yellow;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 4px;
 		}
 	}
 
@@ -90,8 +100,56 @@ body {
 		height: 100%; 
 		overflow: auto;
 		background-color: rgb(0,0,0); 
-		background-color: rgba(0,0,0,0.4);
+		background-color: rgba(0,0,0,0.8);
 	    animation-name: fadeIn;
 	    animation-duration: 0.4s;
+
+	    .bus_list {
+	    	height: 90vh;
+	    	color: white;
+	    	display: flex;
+	    	flex-direction: column;
+	    	flex-wrap: wrap;
+	    	align-items: center;
+	    	justify-content: space-around;
+
+	    	h3 {
+	    		text-align: center;
+	    		font-weight: 700;
+	    		padding: 5px;
+	    	}
+
+	    	.lines {
+	    		background-color: white;
+	    		color: black;
+	    		padding: 5px;
+	    		font-weight: 900;
+	    		border-radius: 3px;
+	    	}
+
+	    	.hours {
+	    		color: $yellow;
+	    	}
+	    }
+
+	    .close {
+	    	font-size: 35px;
+	    	padding: 0 3px;
+	    	cursor: pointer;
+	    }
+	}
+
+	.whole {
+		display: flex;
+		justify-content: center;
+
+		.check_all_button {
+			background-color: transparent;
+			border: 2px solid $yellow;
+			color: $yellow;
+			padding: 10px;
+			margin: 10px;
+			border-radius: 4px;
+		}
 	}
 }
