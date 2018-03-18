@@ -52,6 +52,8 @@ function timetable() {
 
   var i;
 
+  button.className = 'check_all_button';
+
   for (i = 0; i < busStop.length; i++) { 
     
     var date = new Date("February 23 2018 " + busStop[i]);
@@ -73,6 +75,7 @@ function allBusses() {
   var bussesTimetable = document.getElementById('busses_timetable');
   var bussesList = document.getElementById('busses_list');
   var i;
+
   for (i = 1; i < 7; i++) { 
     var allLines = window[selection.value + [i] + direction.value];
     if (allLines == undefined) {break;}
@@ -97,6 +100,8 @@ function difPeriod() {
   var bussesHeaderDif = document.createElement("h3");
   var textAllBussesDif = document.createTextNode("Wszystkie autobusy odjeżdżające w " + dayTypeDif + " z tego przystanku");
   var i;
+
+  bussesHeaderDif.className = 'description';
 
   bussesHeaderDif.appendChild(textAllBussesDif);
   bussesList.appendChild(bussesHeaderDif);
@@ -130,11 +135,29 @@ function closeWindow() {
   var bussesList = document.getElementById('busses_list');
   var hours = bussesList.getElementsByClassName('hours');
   var lines = bussesList.getElementsByClassName('lines');
+  var description = bussesList.getElementsByClassName('description');
   timetableModal.style.display = "none";
   console.log(hours);
-  hours.innerHTML = "";
-  lines.innerHTML = "";
+  for (var i = hours.length; i--; ) {
+    hours[i].remove();
+  }
+  for (var i = lines.length; i--; ) {
+    lines[i].remove();
+  }
+  for (var i = description.length; i--; ) {
+    description[i].remove();
+  }
 }
 
+function bus() {
+  var wholeTimetable = document.getElementById('whole_timetable');
+  var checkAllButton = wholeTimetable.getElementsByClassName('check_all_button');
 
-checkBus.addEventListener('click', timetable);
+  for (var i = checkAllButton.length; i--; ) {
+    checkAllButton[i].remove();
+  }
+  
+  timetable();
+}
+
+checkBus.addEventListener('click', bus);
