@@ -17,13 +17,17 @@ var timetableContent = document.getElementById('timetable_content');
 
 if (weekDay > 0 && weekDay < 6) {
   var szpital1pkp = ['6:10', '7:15', '7:35', '7:55', '8:45', '11:30', '14:10', '15:10', '15:55', '16:50', '19:10'];
+  var szpital3pkp = ['7:25', '8:05', '8:55', '13:14', '14:10', '14:50', '15:10'];
   var rogali1szpital = ['5:41', '6:32', '7:52', '8:32', '10:47', '13:07', '13:35', '14:27', '14:37', '16:27', '20:12'];
   var rogali2szpital = ['9:44', '15:29'];
+  var rogali1pkp = ['6:17', '7:22', '7:42', '8:02', '8:52', '11:37', '14:17', '15:17', '16:02', '16:57', '19:17'];
   var dayType = "dni robocze";
 
   var szpital1pkpDif = ['7:55', '13:15', '16:55', '19:10'];
+  var szpital3pkpDif = ['7:25', '15:10'];
   var rogali1szpitalDif = ['6:30', '13:06', '16:25'];
   var rogali2szpitalDif = ['9:42'];
+  var rogali1pkpDif = ['8:02', '13:22', '17:02', '19:17'];
   var dayTypeDif = "soboty, niedziele i święta";
 };
 
@@ -32,13 +36,17 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
     || holiday === "2511" || holiday === "2611") {
 
   var szpital1pkp = ['7:55', '13:15', '16:55', '19:10'];
+  var szpital3pkp = ['7:25', '15:10'];
   var rogali1szpital = ['6:30', '13:06', '16:25'];
   var rogali2szpital = ['9:42'];
+  var rogali1pkp = ['8:02', '13:22', '17:02', '19:17'];
   var dayType = "soboty, niedziele i święta";
 
   var szpital1pkpDif = ['6:10', '7:15', '7:35', '7:55', '8:45', '11:30', '14:10', '15:10', '15:55', '16:50', '19:10'];
+  var szpital3pkpDif = ['7:25', '8:05', '8:55', '13:14', '14:10', '14:50', '15:10'];
   var rogali1szpitalDif = ['5:41', '6:32', '7:52', '8:32', '10:47', '13:07', '13:35', '14:27', '14:37', '16:27', '20:12'];
   var rogali2szpitalDif = ['9:44', '15:29'];
+  var rogali1pkpDif = ['6:17', '7:22', '7:42', '8:02', '8:52', '11:37', '14:17', '15:17', '16:02', '16:57', '19:17'];
   var dayTypeDif = "dni robocze";
 };
 
@@ -78,7 +86,7 @@ function allBusses() {
 
   for (i = 1; i < 7; i++) { 
     var allLines = window[selection.value + [i] + direction.value];
-    if (allLines == undefined) {break;}
+    if (allLines == undefined) {continue;}
     bussesHeader.innerHTML = "Wszystkie autobusy odjeżdżające w " + dayType + " z tego przystanku";
     var header = document.createElement("h4");
     var newParagraph = document.createElement("p")
@@ -108,7 +116,7 @@ function difPeriod() {
 
   for (i = 1; i < 7; i++) { 
     var allLines = window[selection.value + [i] + direction.value + "Dif"];
-    if (allLines == undefined) {break;}
+    if (allLines == undefined) {continue;}
     var header = document.createElement("h4");
     var newParagraph = document.createElement("p")
     var textHeader = document.createTextNode("linia nr " + [i]);
