@@ -134,19 +134,120 @@ if (weekDay > 0 && weekDay < 6) {
 if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || holiday === "13" || holiday === "23" || holiday === "14"
     || holiday === "34" || holiday === "204" || holiday === "314" || holiday === "157" || holiday === "110" || holiday === "1110"
     || holiday === "2511" || holiday === "2611") {
-
+  
+  /*line 1 direction pkp*/
   var szpital1pkp = ['7:55', '13:15', '16:55', '19:10'];
+  var malcuzynskiego1pkp = ['7:56', '13:16', '16:56', '19:11'];
+  var szydlice1pkp = ['7:57', '13:17', '16:57', '19:12'];
+  var konopnickiej1pkp = ['7:58', '13:18', '16:58', '19:13'];
+  var rozana1pkp = ['7:59', '13:19', '16:59', '19:14'];
+  var sikorskiego1pkp = ['8:00', '13:20', '17:00', '19:15'];
+  var strzelecka1pkp = ['8:01', '13:21', '17:01', '19:16'];
+  var rogali1pkp = ['8:02', '13:22', '17:02', '19:17'];
+  var szkolna1pkp = ['8:03', '13:23', '17:03', '19:18'];
+  var heykego1pkp = ['8:04', '13:24', '17:04', '19:19'];
+  var kartuska1pkp = ['8:05', '13:25', '17:05', '19:20'];
+  var szopinskiego1pkp = ['8:07', '13:27', '17:07', '19:22'];
+  var maja1pkp = ['8:09', '13:29', '17:09', '19:24'];
+  var dworcowa1pkp = ['8:10', '13:30', '17:10', '19:25'];
+  
+  /*line 3 direction pkp*/
   var szpital3pkp = ['7:25', '15:10'];
+  var malcuzynskiego3pkp = ['7:26', '15:11'];
+  var szydlice3pkp = ['7:27', '15:12'];
+  var konopnickiej3pkp = ['7:28', '15:13'];
+  var staszica3pkp = ['7:29', '15:14'];
+  var marca3pkp = ['7:30', '15:15'];
+  var galeria3pkp = ['7:32', '15:17'];
+  var kapliczna3pkp = ['7:34', '15:19'];
+  var skarszewska3pkp = ['7:35', '15:20'];
+  var matejki3pkp = ['7:36', '15:21'];
+  var michalowskiego3pkp = ['7:37', '15:22'];
+  
+  /*line 4 direction pkp*/
+  var szpital4pkp = ['10:40', '17:40'];
+  var malcuzynskiego4pkp = ['10:41', '17:41'];
+  var szydlice4pkp = ['10:42', '17:42'];
+  var konopnickiej4pkp = ['10:43', '17:43'];
+  var staszica4pkp = ['10:44', '17:44'];
+  var kasztanowa4pkp = ['10:45', '17:45'];
+  var kosciuszki4pkp = ['10:46', '17:46'];
+  var chojnicka4pkp = ['10:47', '17:47'];
+  var cegielnia4pkp = ['10:49', '17:49'];
+  var chojnickaklasztorna4pkp = ['10:50', '17:50'];
+  var klasztorna4pkp = ['10:51', '17:51'];
+  var galeria4pkp = ['10:53', '17:53'];
+  var kapliczna4pkp = ['10:55', '17:55'];
+  var skarszewska4pkp = ['10:56', '17:56'];
+  var matejki4pkp = ['10:57', '17:57'];
+  var michalowskiego4pkp = ['10:58', '17:58'];
+  
+  var szpital4pkp = ['10:40', '17:40'];
+  var szpital7pkp = ['12:35'];
+
   var rogali1szpital = ['6:30', '13:06', '16:25'];
   var rogali2szpital = ['9:42'];
-  var rogali1pkp = ['8:02', '13:22', '17:02', '19:17'];
+
   var dayType = "soboty, niedziele i święta";
 
+  /*different day type*/
+  /*line 1 direction pkp*/
   var szpital1pkpDif = ['6:10', '7:15', '7:35', '7:55', '8:45', '11:30', '14:10', '15:10', '15:55', '16:50', '19:10'];
+  var malcuzynskiego1pkpDif = ['6:11', '7:16', '7:36', '7:56', '8:46', '11:31', '14:11', '15:11', '15:56', '16:51', '19:11'];
+  var szydlice1pkpDif = ['6:12', '7:17', '7:37', '7:57', '8:47', '11:32', '14:12', '15:12', '15:57', '16:52', '19:12'];
+  var konopnickiej1pkpDif = ['6:13', '7:18', '7:38', '7:58', '8:48', '11:33', '14:13', '15:13', '15:58', '16:53', '19:13'];
+  var rozana1pkpDif = ['6:14', '7:19', '7:39', '7:59', '8:49', '11:34', '14:14', '15:14', '15:59', '16:54', '19:14'];
+  var sikorskiego1pkpDif = ['6:15', '7:20', '7:40', '8:00', '8:50', '11:35', '14:15', '15:15', '16:00', '16:55', '19:15'];
+  var strzelecka1pkpDif = ['6:16', '7:21', '7:41', '8:01', '8:51', '11:36', '14:16', '15:16', '16:01', '16:56', '19:16'];
+  var rogali1pkpDif = ['6:17', '7:22', '7:42', '8:02', '8:52', '11:37', '14:17', '15:17', '16:02', '16:57', '19:17'];
+  var marchewicza1pkpDif = ['6:18', '7:23', '7:43', '8:03', '8:53', '11:38', '14:18', '15:18', '16:03', '16:58', '19:18'];
+  var bolewskiej1pkpDif = ['6:19', '7:24', '7:44', '8:04', '8:54', '11:39', '14:19', '15:19', '16:04', '16:59', '19:19'];
+  var szkolna1pkpDif = ['6:20', '7:25', '7:45', '8:05', '8:55', '11:40', '14:20', '15:20', '16:05', '17:00', '19:20'];
+  var heykego1pkpDif = ['6:21', '7:26', '7:46', '8:06', '8:56', '11:41', '14:21', '15:21', '16:06', '17:01', '19:21'];
+  var kartuska1pkpDif = ['6:22', '7:27', '7:47', '8:07', '8:57', '11:42', '14:22', '15:22', '16:07', '17:02', '19:22'];
+  var szopinskiego1pkpDif = ['6:24', '7:29', '7:49', '8:09', '8:59', '11:44', '14:24', '15:24', '16:09', '17:04', '19:24'];
+  var maja1pkpDif = ['6:26', '7:31', '7:51', '8:11', '9:01', '11:46', '14:26', '15:26', '16:11', '17:06', '19:26'];
+  var dworcowa1pkpDif = ['6:27', '7:32', '7:52', '8:12', '9:02', '11:47', '14:27', '15:27', '16:12', '17:07', '19:27'];
+  
+  /*line 3 direction pkp*/
   var szpital3pkpDif = ['7:25', '8:05', '8:55', '13:14', '14:10', '14:50', '15:10'];
+  var malcuzynskiego3pkpDif = ['7:26', '8:06', '8:56', '13:15', '14:11', '14:51', '15:11'];
+  var szydlice3pkpDif = ['7:27', '8:07', '8:57', '13:16', '14:12', '14:52', '15:12'];
+  var konopnickiej3pkpDif = ['7:28', '8:08', '8:58', '13:17', '14:13', '14:53', '15:13'];
+  var staszica3pkpDif = ['7:29', '8:09', '8:59', '13:18', '14:14', '14:54', '15:14'];
+  var marca3pkpDif = ['7:30', '8:10', '9:00', '13:19', '14:15', '14:55', '15:15'];
+  var galeria3pkpDif = ['7:32', '8:12', '9:02', '13:21', '14:17', '14:57', '15:17'];
+  var kapliczna3pkpDif = ['7:34', '8:14', '9:04', '13:23', '14:19', '14:59', '15:19'];
+  var skarszewska3pkpDif = ['7:35', '8:15', '9:05', '13:24', '14:20', '15:00', '15:20'];
+  var matejki3pkpDif = ['7:36', '8:16', '9:06', '13:25', '14:21', '15:01', '15:21'];
+  var michalowskiego3pkpDif = ['7:37', '8:17', '9:07', '13:26', '14:22', '15:02', '15:22'];
+  var dworcowa3mlynskaDif = ['8:19'];
+  var maja3mlynskaDif = ['8:20'];
+  
+  /*line 4 direction pkp*/
+  var szpital4pkpDif = ['10:40', '15:50', '17:40'];
+  var malcuzynskiego4pkpDif = ['10:41', '15:51', '17:41'];
+  var szydlice4pkpDif = ['10:42', '15:52', '17:42'];
+  var konopnickiej4pkpDif = ['10:43', '15:53', '17:43'];
+  var staszica4pkpDif = ['10:44', '15:54', '17:44'];
+  var kasztanowa4pkpDif = ['10:45', '15:55', '17:45'];
+  var kosciuszki4pkpDif = ['10:46', '15:56', '17:46'];
+  var chojnicka4pkpDif = ['10:47', '15:57', '17:47'];
+  var cegielnia4pkpDif = ['10:49', '15:59', '17:49'];
+  var chojnickaklasztorna4pkpDif = ['10:50', '16:00', '17:50'];
+  var wierzysko4pkpDif = ['16:02'];
+  var klasztorna4pkpDif = ['10:51', '16:04', '17:51'];
+  var galeria4pkpDif = ['10:53', '16:06', '17:53'];
+  var kapliczna4pkpDif = ['10:55', '16:08', '17:55'];
+  var skarszewska4pkpDif = ['10:56', '16:09', '17:56'];
+  var matejki4pkpDif = ['10:57', '16:10', '17:57'];
+  var michalowskiego4pkpDif = ['10:58', '16:11', '17:58'];
+  
+  var szpital6mlynskaDif = ['7:03'];
+  var szpital7pkpDif = ['12:35'];
   var rogali1szpitalDif = ['5:41', '6:32', '7:52', '8:32', '10:47', '13:07', '13:35', '14:27', '14:37', '16:27', '20:12'];
   var rogali2szpitalDif = ['9:44', '15:29'];
-  var rogali1pkpDif = ['6:17', '7:22', '7:42', '8:02', '8:52', '11:37', '14:17', '15:17', '16:02', '16:57', '19:17'];
+ 
   var dayTypeDif = "dni robocze";
 };
 
@@ -170,7 +271,11 @@ function timetable() {
     if (ht > hn || (ht === hn && mn < mt)) {break;}
   }
   
-  yourBus.innerHTML = ht + ':' + mt;
+  if (mt < 10) {
+    yourBus.innerHTML = ht + ':' + '0' + mt;
+  } else {
+    yourBus.innerHTML = ht + ':' + mt;
+  };
   button.appendChild(buttonText);
   wholeTimetable.appendChild(button);
 
