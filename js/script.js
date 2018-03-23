@@ -68,8 +68,49 @@ if (weekDay > 0 && weekDay < 6) {
   var matejki4pkp = ['10:57', '16:10', '17:57'];
   var michalowskiego4pkp = ['10:58', '16:11', '17:58'];
   
+  /*direction szpital*/
+  /*line 1 direction szpital*/
+  var pkp1szpital = ['5:29', '6:20', '7:40', '8:20', '10:35', '12:55', '13:23', '14:15', '14:25', '16:15', '20:00'];
+  var dworcowa1szpital = ['5:30', '6:21', '7:41', '8:21', '10:36', '12:56', '13:24', '14:16', '14:26', '16:16', '20:01'];
+  var maja1szpital = ['5:31', '6:22', '7:42', '8:22', '10:37', '12:57', '13:25', '14:17', '14:27', '16:17', '20:02'];
+  var szopinskiego1szpital = ['5:33', '6:24', '7:44', '8:24', '10:39', '12:59', '13:27', '14:19', '14:29', '16:19', '20:04'];
+  var kartuska1szpital = ['5:35', '6:26', '7:46', '8:26', '10:41', '13:01', '13:29', '14:21', '14:31', '16:21', '20:06'];
+  var heykego1szpital = ['5:36', '6:27', '7:47', '8:27', '10:42', '13:02', '13:30', '14:22', '14:32', '16:22', '20:07'];
+  var szkolna1szpital = ['5:38', '6:29', '7:49', '8:29', '10:44', '13:04', '13:32', '14:24', '14:34', '16:24', '20:09'];
+  var bolewskiej1szpital = ['5:39', '6:30', '7:50', '8:30', '10:45', '13:05', '13:33', '14:25', '14:35', '16:25', '20:10'];
+  var marchewicza1szpital = ['5:40', '6:31', '7:51', '8:31', '10:46', '13:06', '13:34', '14:26', '14:36', '16:26', '20:11'];
   var rogali1szpital = ['5:41', '6:32', '7:52', '8:32', '10:47', '13:07', '13:35', '14:27', '14:37', '16:27', '20:12'];
+  var strzelecka1szpital = ['5:42', '6:33', '7:53', '8:33', '10:48', '13:08', '13:36', '14:28', '14:38', '16:28', '20:13'];
+  var sikorskiego1szpital = ['5:43', '6:34', '7:54', '8:34', '10:49', '13:09', '13:37', '14:29', '14:39', '16:29', '20:14'];
+  var rozana1szpital = ['5:44', '6:35', '7:55', '8:35', '10:50', '13:10', '13:38', '14:30', '14:40', '16:30', '20:15'];
+  var konopnickiej1szpital = ['5:45', '6:36', '7:56', '8:36', '10:51', '13:11', '13:39', '14:31', '14:41', '16:31', '20:16'];
+  var szydlice1szpital = ['5:46', '6:37', '7:57', '8:37', '10:52', '13:12', '13:40', '14:32', '14:42', '16:32', '20:17'];
+  var malcuzynskiego1szpital = ['5:47', '6:38', '7:58', '8:38', '10:53', '13:13', '13:41', '14:33', '14:43', '16:33', '20:18'];
+
+  /*line 2 direction szpital*/
+  var pkp2szpital = ['9:25', '15:10'];
+  var michalowskiego2szpital = ['9:26', '15:11'];
+  var kossaka2szpital = ['9:27', '15:12'];
+  var tatarkiewicza2szpital = ['9:29', '15:14'];
+  var michalowicza2szpital = ['9:30', '15:15'];
+  var towarowa2szpital = ['9:31', '15:16'];
+  var bazowa2szpital = ['9:32', '15:17'];
+  var drogowcow2szpital = ['9:33', '15:18'];
+  var petla2szpital = ['9:34', '15:19'];
+  var szopinskiego2szpital = ['9:36', '15:21'];
+  var kartuska2szpital = ['9:38', '15:23'];
+  var heykego2szpital = ['9:39', '15:24'];
+  var szkolna2szpital = ['9:41', '15:26'];
+  var bolewskiej2szpital = ['9:42', '15:27'];
+  var marchewicza2szpital = ['9:43', '15:28'];
   var rogali2szpital = ['9:44', '15:29'];
+  var strzelecka2szpital = ['9:45', '15:30'];
+  var sikorskiego2szpital = ['9:46', '15:31'];
+  var rozana2szpital = ['9:47', '15:32'];
+  var konopnickiej2szpital = ['9:48', '15:33'];
+  var szydlice2szpital = ['9:49', '15:34'];
+  var malcuzynskiego2szpital = ['9:50', '15:35'];
+  
   var szpital6mlynska = ['7:03'];
   var szpital7pkp = ['12:35'];
   
