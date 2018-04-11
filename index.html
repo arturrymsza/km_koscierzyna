@@ -8,6 +8,85 @@
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
+		<header class="name container">
+			<h1>Rozkład Jazdy</h1>
+			<img src="img/logo.png" alt="logo autobus pod lipą">
+			<h2>Komunikacji Miejskiej</h2>
+			<h2>w Kościerzynie</h2>
+		</header>
+		<main class="container">
+			<section class="check">
+				<h2>Wybierz swój przystanek, linię i kierunek</h2>
+				<div class="choice">
+					<select id="selection">
+						<option value = "pkp">Dworzec PKP</option>
+						<option value = "szpital">Szpital</option>
+						<option value = "malcuzynskiego">Małcużyńskiego</option>
+						<option value = "szydlice">Skłodowskiej(Delikatesy)</option>
+						<option value = "konopnickiej">Skłodowskiej(Szóstka)</option>
+						<option value = "rozana">Skłodowskiej(przychodnia)</option>
+						<option value = "sikorskiego">Sikorskiego</option>
+						<option value = "strzelecka">Strzelecka</option>
+						<option value = "rogali">Rogali</option>
+						<option value = "marchewicza">Marchewicza(bloki)</option>
+						<option value = "bolewskiej">Marchewicza(Bolewskiej)</option>
+						<option value = "szkolna">Szkolna</option>
+						<option value = "heykego">Heykego</option>
+						<option value = "kartuska">Kartuska</option>
+						<option value = "szopinskiego">Szopińskiego</option>
+						<option value = "maja">Dworcowa(3-maja)</option>
+						<option value = "dworcowa">Dworcowa(Sędzickiego)</option>
+						<option value = "staszica">Staszica</option>
+						<option value = "marca">8 marca(szkoła Jedynka)</option>
+						<option value = "galeria">Galeria Wybickiego</option>
+						<option value = "kapliczna">Kapliczna</option>
+						<option value = "skarszewska">Skarszewska</option>
+						<option value = "matejki">Matejki</option>
+						<option value = "michalowskiego">Dworcowa(Michałowskiego)</option>
+						<option value = "kasztanowa">8 marca(Kasztanowa)</option>
+						<option value = "kosciuszki">Kościuszki</option>
+						<option value = "chojnicka">Wojska Pol.(Chojnicka)</option>
+						<option value = "cegielnia">Chojnicka(Cegielnia)</option>
+						<option value = "chojnickaklasztorna">Chojnicka(Klasztorna)</option>
+						<option value = "wierzysko">Wierzysko</option>
+						<option value = "klasztorna">Klasztorna</option>
+						<option value = "roltex">Roltex</option>
+					</select>
+					<select id="line">
+						<option value = "1">linia 1</option>
+						<option value = "2">linia 2</option>
+						<option value = "3">linia 3</option>
+						<option value = "4">linia 4</option>
+						<option value = "5">linia 5</option>
+						<option value = "6">linia 3/2</option>
+						<option value = "7">linia 1/3</option>
+					</select>
+					<select id="direction">
+						<option value = "szpital">Szpital</option>
+						<option value = "pkp">Dworzec PKP</option>
+						<option value = "mlynska">Woj.Polskiego(Młyńska)</option>
+						<option value = "staszica">Staszica</option>
+					</select>
+				</div>
+				<button id="check_bus" class="check_bus">sprawdź</button>
+			</section>
+			<section class="result">
+				<h3>najbliższy autobus odjeżdża o godzinie:</h3>
+				<h2 id="your_bus" class="your_time"></h2>	
+				<p id="period"></p>
+			</section>
+			<div id="whole_timetable" class="whole">	
+			</div>
+			<div id="timetable_modal" class="modal">
+				<span class="close" id="close_modal">&times;</span>
+				<div id="modal_content">
+					<div id="busses_list" class="bus_list">
+						<h3 id="busses_header"></h3>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
