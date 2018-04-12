@@ -20,6 +20,15 @@ function timetable() {
 
   button.className = 'check_all_button';
 
+  if(busStop == undefined){
+    yourBus.style.fontSize = '4.5vw';
+    yourBus.style.textAlign = 'center';
+    yourBus.style.color = '#ff5441';
+    yourBus.innerHTML = 'Wybrana linia nie odjeżdża z Twojego przystanku';
+  } else {
+
+  yourBus.style = null;
+
   for (i = 0; i < busStop.length; i++) { 
     
     var date = new Date("February 23 2018 " + busStop[i]);
@@ -32,7 +41,8 @@ function timetable() {
     yourBus.innerHTML = ht + ':' + '0' + mt;
   } else {
     yourBus.innerHTML = ht + ':' + mt;
-  };
+  }
+  }
   button.appendChild(buttonText);
   wholeTimetable.appendChild(button);
 
