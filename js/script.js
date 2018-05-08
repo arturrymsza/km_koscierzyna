@@ -27,21 +27,21 @@ function timetable() {
     yourBus.innerHTML = 'Wybrana linia nie odjeżdża z Twojego przystanku';
   } else {
 
-  yourBus.style = null;
+    yourBus.style = null;
 
-  for (i = 0; i < busStop.length; i++) { 
+    for (i = 0; i < busStop.length; i++) { 
+      
+      var date = new Date("February 23 2018 " + busStop[i]);
+      var ht = date.getHours();
+      var mt = date.getMinutes(); 
+      if (ht > hn || (ht === hn && mn < mt)) {break;}
+    }
     
-    var date = new Date("February 23 2018 " + busStop[i]);
-    var ht = date.getHours();
-    var mt = date.getMinutes(); 
-    if (ht > hn || (ht === hn && mn < mt)) {break;}
-  }
-  
-  if (mt < 10) {
-    yourBus.innerHTML = ht + ':' + '0' + mt;
-  } else {
-    yourBus.innerHTML = ht + ':' + mt;
-  }
+    if (mt < 10) {
+      yourBus.innerHTML = ht + ':' + '0' + mt;
+    } else {
+      yourBus.innerHTML = ht + ':' + mt;
+    }
   }
   button.appendChild(buttonText);
   wholeTimetable.appendChild(button);
@@ -56,16 +56,26 @@ function allBusses() {
   var bussesList = document.getElementById('busses_list');
   var i;
 
-  for (i = 1; i < 7; i++) { 
+  for (i = 1; i < 9; i++) { 
     var allLines = window[selection.value + [i] + direction.value];
     if (allLines == undefined) {continue;}
     bussesHeader.innerHTML = "Wszystkie autobusy odjeżdżające w " + dayType + " z tego przystanku";
     var header = document.createElement("h4");
-    var newParagraph = document.createElement("p")
-    var textHeader = document.createTextNode("linia nr " + [i]);
+    var newParagraph = document.createElement("p");
+
+    if (i < 6) {
+      var textHeader = document.createTextNode("linia nr " + [i]);
+    } if (i == 6) {
+        var textHeader = document.createTextNode("linia nr 3/2");
+    } if (i == 7) {
+        var textHeader = document.createTextNode("linia nr 1/3");
+    } if (i == 8) {
+        var textHeader = document.createTextNode("linia nr 2/3");
+    };
+    
     header.className = 'lines';
     newParagraph.className = 'hours';
-    
+
     header.appendChild(textHeader);
     bussesList.appendChild(header);
     newParagraph.innerHTML = allLines;
@@ -86,15 +96,25 @@ function difPeriod() {
   bussesHeaderDif.appendChild(textAllBussesDif);
   bussesList.appendChild(bussesHeaderDif);
 
-  for (i = 1; i < 7; i++) { 
+  for (i = 1; i < 9; i++) { 
     var allLines = window[selection.value + [i] + direction.value + "Dif"];
     if (allLines == undefined) {continue;}
     var header = document.createElement("h4");
-    var newParagraph = document.createElement("p")
-    var textHeader = document.createTextNode("linia nr " + [i]);
+    var newParagraph = document.createElement("p");
+
+    if (i < 6) {
+      var textHeader = document.createTextNode("linia nr " + [i]);
+    } if (i == 6) {
+        var textHeader = document.createTextNode("linia nr 3/2");
+    } if (i == 7) {
+        var textHeader = document.createTextNode("linia nr 1/3");
+    } if (i == 8) {
+        var textHeader = document.createTextNode("linia nr 2/3");
+    };
+
     header.className = 'lines';
     newParagraph.className = 'hours';
-    
+
     header.appendChild(textHeader);
     bussesList.appendChild(header);
     newParagraph.innerHTML = allLines;

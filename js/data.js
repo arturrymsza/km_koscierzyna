@@ -149,9 +149,68 @@ if (weekDay > 0 && weekDay < 6) {
   var galeria5staszica = ['6:39', '15:59'];
   var szopinskiego5staszica = ['10:19'];
   var rozana5staszica = ['10:22'];
-  
-  var szpital7mlynska = ['7:03'];
+
+  /*line 1/3 direction Mlynska*/
+  var szpital7pkp = ['7:03'];
+  var malcuzynskiego7pkp = ['7:04'];
+  var szydlice7pkp = ['7:05'];
+  var konopnickiej7pkp = ['7:06'];
+  var rozana7pkp = ['7:07'];
+  var sikorskiego7pkp = ['7:08'];
+  var strzelecka7pkp = ['7:09'];
+  var rogali7pkp = ['7:10'];
+  var marchewicza7pkp = ['7:11'];
+  var bolewskiej7pkp = ['7:12'];
+  var szkolna7pkp = ['7:13'];
+  var heykego7pkp = ['7:14'];
+  var kartuska7pkp = ['7:15'];
+  var szopinskiego7pkp = ['7:17'];
+
+  /*line 1/3 direction szpital*/
+  var galeria7szpital = ['7:18'];
+  var marca7szpital = ['7:20'];
+  var staszica7szpital = ['7:21'];
+  var konopnickiej7szpital = ['7:22'];
+  var szydlice7szpital = ['7:23'];
+  var malcuzynskiego7szpital = ['7:24'];
+
+  /*line 3/2 direction pkp*/
   var szpital6pkp = ['12:35'];
+  var malcuzynskiego6pkp = ['12:36'];
+  var szydlice6pkp = ['12:37'];
+  var konopnickiej6pkp = ['12:38'];
+  var staszica6pkp = ['12:39'];
+  var marca6pkp = ['12:40'];
+  var galeria6pkp = ['12;42'];
+  var kapliczna6pkp = ['12:44'];
+  var skarszewska6pkp = ['12:45'];
+  var matejki6pkp = ['12:46'];
+  var kossaka6pkp = ['12:47'];
+  var tatarkiewicza6pkp = ['12:49'];
+  var michalowicza6pkp = ['12:50'];
+  var towarowa6pkp = ['12:51'];
+  var budowlanych6pkp = ['12:52'];
+  var drogowcow6pkp = ['12:54'];
+  var dworcowa6pkp = ['12:55'];
+
+  /*line 2/3 direction szpital*/
+  var pkp8szpital = ['7:10'];
+  var dworcowa8szpital = ['7:11'];
+  var drogowcow8szpital = ['7:12'];
+  var budowlanych8szpital = ['7:14'];
+  var towarowa8szpital = ['7:15'];
+  var michalowicza8szpital = ['7:16'];
+  var tatarkiewicza8szpital = ['7:17'];
+  var kossaka8szpital = ['7:19'];
+  var matejki8szpital = ['7:20'];
+  var skarszewska8szpital = ['7:21'];
+  var kapliczna8szpital = ['7:22'];
+  var galeria8szpital = ['7:24'];
+  var marca8szpital = ['7:26'];
+  var staszica8szpital = ['7:27'];
+  var konopnickiej8szpital = ['7:28'];
+  var szydlice8szpital = ['7:29'];
+  var malcuzynskiego8szpital = ['7:30'];
   
   var dayType = "dni robocze";
   
@@ -202,9 +261,25 @@ if (weekDay > 0 && weekDay < 6) {
   var skarszewska4pkpDif = ['10:56', '17:56'];
   var matejki4pkpDif = ['10:57', '17:57'];
   var michalowskiego4pkpDif = ['10:58', '17:58'];
-  
-  var szpital4pkpDif = ['10:40', '17:40'];
+ 
+ /*line 3/2 direction pkp*/ 
   var szpital6pkpDif = ['12:35'];
+  var malcuzynskiego6pkpDif = ['12:36'];
+  var szydlice6pkpDif = ['12:37'];
+  var konopnickiej6pkpDif = ['12:38'];
+  var staszica6pkpDif = ['12:39'];
+  var marca6pkpDif = ['12:40'];
+  var galeria6pkpDif = ['12;42'];
+  var kapliczna6pkpDif = ['12:44'];
+  var skarszewska6pkpDif = ['12:45'];
+  var matejki6pkpDif = ['12:46'];
+  var kossaka6pkpDif = ['12:47'];
+  var tatarkiewicza6pkpDif = ['12:49'];
+  var michalowicza6pkpDif = ['12:50'];
+  var towarowa6pkpDif = ['12:51'];
+  var budowlanych6pkpDif = ['12:52'];
+  var drogowcow6pkpDif = ['12:54'];
+  var dworcowa6pkpDif = ['12:55'];
 
   /*direction szpital*/
   /*line 1 direction szpital*/
@@ -338,8 +413,24 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
   var matejki4pkp = ['10:57', '17:57'];
   var michalowskiego4pkp = ['10:58', '17:58'];
   
-  var szpital4pkp = ['10:40', '17:40'];
+  /*line 3/2 direction pkp*/
   var szpital6pkp = ['12:35'];
+  var malcuzynskiego6pkp = ['12:36'];
+  var szydlice6pkp = ['12:37'];
+  var konopnickiej6pkp = ['12:38'];
+  var staszica6pkp = ['12:39'];
+  var marca6pkp = ['12:40'];
+  var galeria6pkp = ['12;42'];
+  var kapliczna6pkp = ['12:44'];
+  var skarszewska6pkp = ['12:45'];
+  var matejki6pkp = ['12:46'];
+  var kossaka6pkp = ['12:47'];
+  var tatarkiewicza6pkp = ['12:49'];
+  var michalowicza6pkp = ['12:50'];
+  var towarowa6pkp = ['12:51'];
+  var budowlanych6pkp = ['12:52'];
+  var drogowcow6pkp = ['12:54'];
+  var dworcowa6pkp = ['12:55'];
 
   /*direction szpital*/
   /*line 1 direction szpital*/
@@ -483,6 +574,41 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
   var matejki4pkpDif = ['10:57', '16:10', '17:57'];
   var michalowskiego4pkpDif = ['10:58', '16:11', '17:58'];
 
+  /*line 3/2 direction pkp*/ 
+  var szpital6pkpDif = ['12:35'];
+  var malcuzynskiego6pkpDif = ['12:36'];
+  var szydlice6pkpDif = ['12:37'];
+  var konopnickiej6pkpDif = ['12:38'];
+  var staszica6pkpDif = ['12:39'];
+  var marca6pkpDif = ['12:40'];
+  var galeria6pkpDif = ['12;42'];
+  var kapliczna6pkpDif = ['12:44'];
+  var skarszewska6pkpDif = ['12:45'];
+  var matejki6pkpDif = ['12:46'];
+  var kossaka6pkpDif = ['12:47'];
+  var tatarkiewicza6pkpDif = ['12:49'];
+  var michalowicza6pkpDif = ['12:50'];
+  var towarowa6pkpDif = ['12:51'];
+  var budowlanych6pkpDif = ['12:52'];
+  var drogowcow6pkpDif = ['12:54'];
+  var dworcowa6pkpDif = ['12:55'];
+
+  /*line 1/3 direction Mlynska*/
+  var szpital7pkpDif = ['7:03'];
+  var malcuzynskiego7pkpDif = ['7:04'];
+  var szydlice7pkpDif = ['7:05'];
+  var konopnickiej7pkpDif = ['7:06'];
+  var rozana7pkpDif = ['7:07'];
+  var sikorskiego7pkpDif = ['7:08'];
+  var strzelecka7pkpDif = ['7:09'];
+  var rogali7pkpDif = ['7:10'];
+  var marchewicza7pkpDif = ['7:11'];
+  var bolewskiej7pkpDif = ['7:12'];
+  var szkolna7pkpDif = ['7:13'];
+  var heykego7pkpDif = ['7:14'];
+  var kartuska7pkpDif = ['7:15'];
+  var szopinskiego7pkpDif = ['7:17'];
+
   /*direction szpital*/
   /*line 1 direction szpital*/
   var pkp1szpitalDif = ['5:29', '6:20', '7:40', '8:20', '10:35', '12:55', '13:23', '14:15', '14:25', '16:15', '18:30', '20:00'];
@@ -566,8 +692,35 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
   var galeria5staszicaDif = ['6:39', '15:59'];
   var szopinskiego5staszicaDif = ['10:19'];
   var rozana5staszicaDif = ['10:22'];
+
+  /*line 1/3 direction szpital*/
+  var galeria7szpitalDif = ['7:18'];
+  var marca7szpitalDif = ['7:20'];
+  var staszica7szpitalDif = ['7:21'];
+  var konopnickiej7szpitalDif = ['7:22'];
+  var szydlice7szpitalDif = ['7:23'];
+  var malcuzynskiego7szpitalDif = ['7:24'];
+
+  /*line 2/3 direction szpital*/
+  var pkp8szpitalDif = ['7:10'];
+  var dworcowa8szpitalDif = ['7:11'];
+  var drogowcow8szpitalDif = ['7:12'];
+  var budowlanych8szpitalDif = ['7:14'];
+  var towarowa8szpitalDif = ['7:15'];
+  var michalowicza8szpitalDif = ['7:16'];
+  var tatarkiewicza8szpitalDif = ['7:17'];
+  var kossaka8szpitalDif = ['7:19'];
+  var matejki8szpitalDif = ['7:20'];
+  var skarszewska8szpitalDif = ['7:21'];
+  var kapliczna8szpitalDif = ['7:22'];
+  var galeria8szpitalDif = ['7:24'];
+  var marca8szpitalDif = ['7:26'];
+  var staszica8szpitalDif = ['7:27'];
+  var konopnickiej8szpitalDif = ['7:28'];
+  var szydlice8szpitalDif = ['7:29'];
+  var malcuzynskiego8szpitalDif = ['7:30'];
   
-  var szpital7mlynskaDif = ['7:03'];
+  var szpital7pkpDif = ['7:03'];
   var szpital6pkpDif = ['12:35'];
  
   var dayTypeDif = "dni robocze";
