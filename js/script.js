@@ -8,6 +8,23 @@ var period = document.getElementById('period');
 var timetableModal = document.getElementById('timetable_modal');
 var timetableContent = document.getElementById('timetable_content');
 
+function openNav() {
+    document.getElementById("menusidenav").style.width = "100%";
+}
+
+function openNavTrasy() {
+    document.getElementById("linessidenav").style.width = "100%";
+    closeNav();
+}
+
+function closeNav() {
+    document.getElementById("menusidenav").style.width = "0";
+}
+
+function closeNavTrasy() {
+    document.getElementById("linessidenav").style.width = "0";
+}
+
 function timetable() { 
   var busStop = window[selection.value + line.value + direction.value];
   var stop = selection.options[selection.selectedIndex].value;
