@@ -25,6 +25,78 @@ function closeNavTrasy() {
     document.getElementById("linessidenav").style.width = "0";
 }
 
+function openNav1() {
+    document.getElementById("line1sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav1() {
+    document.getElementById("line1sidenav").style.width = "0";
+}
+
+function openNav2() {
+    document.getElementById("line2sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav2() {
+    document.getElementById("line2sidenav").style.width = "0";
+}
+
+function openNav3() {
+    document.getElementById("line3sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav3() {
+    document.getElementById("line3sidenav").style.width = "0";
+}
+
+function openNav4() {
+    document.getElementById("line4sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav4() {
+    document.getElementById("line4sidenav").style.width = "0";
+}
+
+function openNav5() {
+    document.getElementById("line5sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav5() {
+    document.getElementById("line5sidenav").style.width = "0";
+}
+
+function openNav6() {
+    document.getElementById("line1/3sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav6() {
+    document.getElementById("line1/3sidenav").style.width = "0";
+}
+
+function openNav7() {
+    document.getElementById("line2/3sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav7() {
+    document.getElementById("line2/3sidenav").style.width = "0";
+}
+
+function openNav8() {
+    document.getElementById("line3/2sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav8() {
+    document.getElementById("line3/2sidenav").style.width = "0";
+}
+
 function timetable() { 
   var busStop = window[selection.value + line.value + direction.value];
   var stop = selection.options[selection.selectedIndex].value;
