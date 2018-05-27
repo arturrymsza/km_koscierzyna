@@ -573,6 +573,13 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
   var galeria5staszicaDif = ['6:39', '11:59'];
   var marca5staszicaDif = ['6:41', '12:01'];
 
+  /*line 5 direction pkp*/
+  var staszica5pkpDif = ['6:42', '12:02'];
+  var rozana5pkpDif = ['6:44', '12:04'];
+  var szopinskiego5pkpDif = ['6:47', '12:07'];
+  var maja5pkpDif = ['6:49', '12:09'];
+  var dworcowa5pkpDif = ['6:50', '12:10'];
+
   /*line 3/2 direction pkp*/ 
   var szpital6pkpDif = ['12:40'];
   var malcuzynskiego6pkpDif = ['12:41'];
@@ -683,14 +690,6 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
   var konopnickiej4szpitalDif = ['7:45', '12:37'];
   var szydlice4szpitalDif = ['7:46', '12:38'];
   var malcuzynskiego4szpitalDif = ['7:47', '12:39'];
-
-  /*line 5 direction Staszica*/
-  var pkp5staszicaDif = ['6:35', '10:15', '15:55'];
-  var dworcowa5staszicaDif = ['6:36', '10:16', '15:56'];
-  var maja5staszicaDif = ['6:37', '10:17', '15:57'];
-  var galeria5staszicaDif = ['6:39', '15:59'];
-  var szopinskiego5staszicaDif = ['10:19'];
-  var rozana5staszicaDif = ['10:22'];
 
   /*line 1/3 direction szpital*/
   var galeria7szpitalDif = ['7:18'];

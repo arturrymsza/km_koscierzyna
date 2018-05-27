@@ -8,10 +8,10 @@
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
+		<div class="menu container">
+			<h3 onclick="openNav()">menu</h3>
+		</div>
 		<header class="name container">
-			<div>
-				<h3 onclick="openNav()">menu</h3>
-			</div>
 			<h1>Rozkład Jazdy</h1>
 			<img src="img/logo.png" alt="logo autobus pod lipą">
 			<h2>Komunikacji Miejskiej</h2>
@@ -102,26 +102,29 @@
 		</main>
 		<div id="menusidenav" class="sidenav_menu">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<span onclick="openNavTrasy()">Trasy linii</span>
-			<span onclick="openNavPdf()">Rozkład pdf</span>
-			<span onclick="openNavProjekt()">O projekcie</span>
+			<div class="sidenav linesnav">
+				<span onclick="openNavTrasy()">Trasy linii</span>
+				<span onclick="openNavPdf()">Rozkład pdf</span>
+				<span onclick="openNavProjekt()">O projekcie</span>
+			</div>
 		</div>
 		<div id="linessidenav" class="sidenav_lines">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNavTrasy()">&times;</a>
-			<ul>
-				<li onclick="openNav1()">Linia nr 1</li>
-				<li onclick="openNav2()">Linia nr 2</li>
-				<li onclick="openNav3()">Linia nr 3</li>
-				<li onclick="openNav4()">Linia nr 4</li>
-				<li onclick="openNav5()">Linia nr 5</li>
-				<li onclick="openNav6()">Linia nr 1/3</li>
-				<li onclick="openNav7()">Linia nr 2/3</li>
-				<li onclick="openNav8()">Linia nr 3/2</li>
+			<ul class="sidenav linesnav">
+				<li>Wybierz linię:</li>
+				<li onclick="openNav1()" class="line_route">Linia nr 1</li>
+				<li class="line_route" onclick="openNav2()">Linia nr 2</li>
+				<li class="line_route" onclick="openNav3()">Linia nr 3</li>
+				<li class="line_route" onclick="openNav4()">Linia nr 4</li>
+				<li class="line_route" onclick="openNav5()">Linia nr 5</li>
+				<li class="line_route" onclick="openNav6()">Linia nr 1/3</li>
+				<li class="line_route" onclick="openNav7()">Linia nr 2/3</li>
+				<li class="line_route" onclick="openNav8()">Linia nr 3/2</li>
 			</ul>
 		</div>
 		<div id="line1sidenav" class="sidenav_1">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Dworzec PKP</li>
 				<li>Dworcowa</li>
 				<li>3 Maja(Dworcowa)</li>
@@ -145,7 +148,7 @@
 		</div>
 		<div id="line2sidenav" class="sidenav_2">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Dworzec PKP</li>
 				<li>Dworcowa(Michałowskiego/Fałata)</li>
 				<li>Matejki(Kossaka)</li>
@@ -175,7 +178,7 @@
 		</div>
 		<div id="line3sidenav" class="sidenav_3">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Dworzec PKP</li>
 				<li>Dworcowa(Michałowskiego/Fałata)</li>
 				<li>Matejki</li>
@@ -192,7 +195,7 @@
 		</div>
 		<div id="line4sidenav" class="sidenav_4">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Dworzec PKP</li>
 				<li>Dworcowa(Michałowskiego/Fałata)</li>
 				<li>Matejki</li>
@@ -218,7 +221,7 @@
 		</div>
 		<div id="line5sidenav" class="sidenav_5">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Dworzec PKP</li>
 				<li>Dworcowa</li>
 				<li>3 Maja(Dworcowa)</li>
@@ -234,7 +237,7 @@
 		</div>
 		<div id="line1/3sidenav" class="sidenav_6">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Galeria Wybickiego</li>
 				<li>8 Marca(Szkoła Jedynka)</li>
 				<li>Staszica</li>
@@ -262,7 +265,7 @@
 		</div>
 		<div id="line2/3sidenav" class="sidenav_7">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Dworzec PKP</li>
 				<li>Dworcowa</li>
 				<li>Drogowców</li>
@@ -285,7 +288,7 @@
 		</div>
 		<div id="line3/2sidenav" class="sidenav_8">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
-			<ul>
+			<ul class="sidenav">
 				<li class="main_stop">Szpital</li>
 				<li>Małcużyńskiego</li>
 				<li>Skłodowskiej(Delikatesy)</li>

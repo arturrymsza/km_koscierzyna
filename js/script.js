@@ -113,7 +113,7 @@ function timetable() {
     yourBus.style.fontSize = '4.5vw';
     yourBus.style.textAlign = 'center';
     yourBus.style.color = '#ff5441';
-    yourBus.innerHTML = 'Wybrana linia nie odjeżdża z Twojego przystanku';
+    yourBus.innerHTML = 'Wybrana linia nie odjeżdża dziś z Twojego przystanku';
   } else {
 
     yourBus.style = null;

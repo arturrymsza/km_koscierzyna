@@ -15,6 +15,19 @@ body {
 	font-family: 'Lato', sans-serif;
 	background: linear-gradient(to top, #4e4e4e , $background);
 	color: $text-color;
+	overflow: hidden;
+
+	.menu {
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+		padding: 2vh;
+		font-size: 1vw;
+		@media (max-width: 768px) {
+			font-size: 4vw;
+		}
+	}
 
 	header {
 		display: flex;
@@ -23,7 +36,6 @@ body {
 		align-items: center;
 
 		h1 {
-			padding: 5vh 0 2vh;
 			font-size: 4vw;
 			text-transform: uppercase;
 			letter-spacing: 5px;
@@ -39,11 +51,12 @@ body {
 			border-radius: 20%;
 			@media (min-width: 768px) {
 				width: 12%;
+				padding: 1vh;
 			}
 		}
 
 		h2 {
-			padding: 1.4vh;
+			padding-top: 1.4vh;
 			font-size: 1.5vw;
 			letter-spacing: 0.5vw;
 			@media (max-width: 768px) {
@@ -195,6 +208,25 @@ body {
 		}
 	}
 
+	.sidenav {
+		margin: 15vh 0;
+		height: 60vh;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+	    flex-wrap: wrap;
+	    align-items: center;
+	    justify-content: space-around;
+	    &:not(.linesnav) {
+	    	align-items: flex-start;
+	    	list-style-type: circle;
+	    	margin-left: 40vw;
+	    	@media (max-width: 768px) {
+	    	margin-left: 20vw;
+	    	}
+	    }
+	}
+
 	.sidenav_menu {
 		height: 100%;
 		width: 0;
@@ -202,10 +234,20 @@ body {
 		z-index: 1;
 		top: 0;
 		left: 0;
-		background-color: #111;
+		background-color: rgba(0,0,0,0.9);
 		overflow-x: hidden;
 		transition: 0.5s;
-		padding-top: 60px;
+		font-weight: 700;
+		font-size: 3vw;
+		color: #fff;
+
+		span {
+			cursor: pointer;
+		}
+
+		@media (max-width: 768px) {
+	    	font-size: 6vw;
+	    }
 	}
 
 	.sidenav_lines {
@@ -215,103 +257,23 @@ body {
 		z-index: 2;
 		top: 0;
 		right: 0;
-		background-color: #fff;
+	    font-weight: 900;
+	    border-radius: 3px;
+		background-color: rgba(white, 0.9);
 		overflow-x: hidden;
 		transition: 0.5s;
-		padding-top: 60px;
+	    @media (min-width: 768px) {
+	    	font-size: 3vw;
+	    }
 	}
 
-	.sidenav_1 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sidenav_2 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sidenav_3 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sidenav_4 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sidenav_5 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sidenav_6 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
-	.sidenav_7 {
-		height: 100%;
-		width: 0;
-		position: fixed;
-		z-index: 3;
-		top: 0;
-		left: 0;
-		background-color: #111;
-		overflow-x: hidden;
-		transition: 0.5s;
-		padding-top: 60px;
-	}
-
+	.sidenav_1,
+	.sidenav_2,
+	.sidenav_3,
+	.sidenav_4,
+	.sidenav_5,
+	.sidenav_6,
+	.sidenav_7,
 	.sidenav_8 {
 		height: 100%;
 		width: 0;
@@ -319,10 +281,27 @@ body {
 		z-index: 3;
 		top: 0;
 		left: 0;
-		background-color: #111;
+		background-color: rgba(0,0,0,0.9);
 		overflow-x: hidden;
 		transition: 0.5s;
-		padding-top: 60px;
 	}
 
+	.closebtn {
+		color: $text-color;
+		top: 0;
+		font-size: 35px;
+	    padding: 0 3px;
+	    cursor: pointer;
+	    text-decoration: none;
+	}
+
+	.main_stop {
+		color: $yellow;
+		text-transform: uppercase;
+	}
+
+	.line_route {
+	    cursor: pointer;
+	    color: black;
+	}
 }
