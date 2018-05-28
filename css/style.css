@@ -290,3 +290,22 @@ body {
       @media (min-width: 768px) {
         body .line_plate .line_name {
           font-size: 2vw; } }
+  body footer {
+    width: 100%;
+    font-family: 'apropal', sans-serif;
+    font-size: 1.5vh;
+    color: white;
+    position: fixed;
+    bottom: 2vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    body footer .wytvornia_logo {
+      height: 6vh;
+      border-radius: 50%;
+      margin-left: 1vh; }
