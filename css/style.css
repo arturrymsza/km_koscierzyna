@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@font-face {
+  font-family: 'apropal';
+  src: url("Apropal-Bold.otf") format("opentype");
+  src: url("Apropal-Bold.ttf") format("truetype"); }
 .container {
   width: 100%;
   max-width: 1140px;
@@ -15,7 +19,7 @@ body {
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
-    padding: 2vh;
+    padding-top: 2vh;
     font-size: 1vw; }
     @media (max-width: 768px) {
       body .menu {
@@ -30,23 +34,25 @@ body {
     -ms-flex-align: center;
         align-items: center; }
     body header h1 {
-      font-size: 4vw;
-      text-transform: uppercase;
+      font-family: 'apropal', sans-serif;
+      font-size: 5vw;
+      /*text-transform: uppercase;*/
       letter-spacing: 5px;
-      font-weight: 300; }
+      font-weight: 900; }
       @media (max-width: 768px) {
         body header h1 {
-          font-size: 6vw; } }
+          font-size: 8vw; } }
     body header img {
       padding: 2vh;
-      width: 15%;
+      width: 20%;
       border-radius: 20%; }
       @media (min-width: 768px) {
         body header img {
           width: 12%;
-          padding: 1vh; } }
+          padding: 1.5vh; } }
     body header h2 {
-      padding-top: 1.4vh;
+      color: white;
+      padding-top: 1vh;
       font-size: 1.5vw;
       letter-spacing: 0.5vw; }
       @media (max-width: 768px) {
@@ -174,7 +180,7 @@ body {
       margin: 10px;
       border-radius: 4px; }
   body .sidenav {
-    margin: 15vh 0;
+    margin: 5vh 0;
     height: 60vh;
     width: auto;
     display: -ms-flexbox;
@@ -191,10 +197,10 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
       list-style-type: circle;
-      margin-left: 40vw; }
+      margin-left: 45vw; }
       @media (max-width: 768px) {
         body .sidenav:not(.linesnav) {
-          margin-left: 20vw; } }
+          margin-left: 25vw; } }
   body .sidenav_menu {
     height: 100%;
     width: 0;
@@ -254,7 +260,33 @@ body {
     text-decoration: none; }
   body .main_stop {
     color: #ffff66;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
   body .line_route {
     cursor: pointer;
     color: black; }
+  body .line_plate {
+    height: 20vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    body .line_plate .line_name {
+      background-color: white;
+      color: black;
+      padding: 5px;
+      font-weight: 900;
+      border-radius: 3px;
+      margin-left: 45vw; }
+      @media (max-width: 768px) {
+        body .line_plate .line_name {
+          margin-left: 25vw; } }
+      @media (min-width: 768px) {
+        body .line_plate .line_name {
+          font-size: 2vw; } }
