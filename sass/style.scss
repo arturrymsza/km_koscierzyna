@@ -31,7 +31,7 @@ body {
 		text-transform: uppercase;
 		color: #fff;
 		cursor: pointer;
-		padding-top: 2vh;
+		padding: 2vh 0 1vh 1vw;
 		font-size: 1vw;
 		@media (max-width: 768px) {
 			font-size: 4vw;
@@ -45,13 +45,13 @@ body {
 		align-items: center;
 
 		h1 {
-			font-family: 'apropal', sans-serif;
-			font-size: 5vw;
-			/*text-transform: uppercase;*/
-			letter-spacing: 5px;
-			font-weight: 900;
+			font-family: 'lato', sans-serif;
+			font-size: 4vw;
+			text-transform: uppercase;
+			letter-spacing: 10px;
+			font-weight: 300;
 			@media (max-width: 768px) {
-				font-size: 8vw;
+				font-size: 6vw;
 			}
 		}
 
