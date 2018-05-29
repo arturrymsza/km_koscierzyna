@@ -3,8 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="msapplication-TileColor" content="#222222">
+		<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+		<meta name="theme-color" content="#222222">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
@@ -102,7 +119,7 @@
 		</main>
 		<footer>
 			<h4>strona stworzona przez</h4>
-			<a href="#"><img class="wytvornia_logo" src="img/wytvornia_awatar.png"></a>
+			<a href="https://www.facebook.com/wytvornia/"><img class="wytvornia_logo" src="img/wytvornia_awatar.png"></a>
 		</footer>
 		<div id="menusidenav" class="sidenav_menu">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -125,6 +142,14 @@
 				<li class="line_route" onclick="openNav7()">Linia nr 2/3</li>
 				<li class="line_route" onclick="openNav8()">Linia nr 3/2</li>
 			</ul>
+		</div>
+		<div id="pdfsidenav" class="sidenav_pdf">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNavPdf()">&times;</a>
+			<div class="sidenav linesnav">
+				<h4>pobierz rozkład PDF:</h4>
+				<span><a href="http://koscierzyna.gda.pl/portal?id=15&res_id=2216498">kierunek Szpital</a></span>
+				<span><a href="http://koscierzyna.gda.pl/portal?id=15&res_id=2216438">kierunek PKP</a></span>
+			</div>
 		</div>
 		<div id="line1sidenav" class="sidenav_1">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
