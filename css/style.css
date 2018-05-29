@@ -272,6 +272,27 @@ body {
       color: #3ba66d; }
     body .sidenav_pdf h4 {
       color: #222222; }
+  body .sidenav_about {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-weight: 900;
+    font-size: 3vw;
+    color: #3ba66d; }
+    body .sidenav_about p {
+      text-align: justify;
+      color: #222222;
+      font-weight: 300;
+      font-size: 3vw; }
+    @media (max-width: 768px) {
+      body .sidenav_about {
+        font-size: 6vw; } }
   body .closebtn {
     color: #3ba66d;
     top: 0;

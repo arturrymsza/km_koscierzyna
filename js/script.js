@@ -106,6 +106,15 @@ function closeNavPdf() {
     document.getElementById("pdfsidenav").style.width = "0";
 }
 
+function openNavAbout() {
+    document.getElementById("aboutsidenav").style.width = "100%";
+    closeNav();
+}
+
+function closeNavAbout() {
+    document.getElementById("aboutsidenav").style.width = "0";
+}
+
 function timetable() { 
   var busStop = window[selection.value + line.value + direction.value];
   var stop = selection.options[selection.selectedIndex].value;
