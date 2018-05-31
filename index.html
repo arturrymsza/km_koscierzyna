@@ -3,13 +3,33 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="msapplication-TileColor" content="#222222">
+		<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+		<meta name="theme-color" content="#222222">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
+		<div class="menu container">
+			<h3 onclick="openNav()">menu</h3>
+		</div>
 		<header class="name container">
-			<h1>Rozkład Jazdy</h1>
+			<h1>rozkład jazdy</h1>
 			<img src="img/logo.png" alt="logo autobus pod lipą">
 			<h2>Komunikacji Miejskiej</h2>
 			<h2>w Kościerzynie</h2>
@@ -97,6 +117,270 @@
 				</div>
 			</div>
 		</main>
+		<footer>
+			<h4>strona stworzona przez</h4>
+			<a href="https://www.facebook.com/wytvornia/"><img class="wytvornia_logo" src="img/wytvornia_awatar.png"></a>
+		</footer>
+		<div id="menusidenav" class="sidenav_menu">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="sidenav linesnav">
+				<span onclick="openNavTrasy()">Trasy linii</span>
+				<span onclick="openNavPdf()">Rozkład pdf</span>
+				<span onclick="openNavAbout()">O projekcie</span>
+			</div>
+		</div>
+		<div id="linessidenav" class="sidenav_lines">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNavTrasy()">&times;</a>
+			<ul class="sidenav linesnav">
+				<li>Wybierz linię:</li>
+				<li onclick="openNav1()" class="line_route">Linia nr 1</li>
+				<li class="line_route" onclick="openNav2()">Linia nr 2</li>
+				<li class="line_route" onclick="openNav3()">Linia nr 3</li>
+				<li class="line_route" onclick="openNav4()">Linia nr 4</li>
+				<li class="line_route" onclick="openNav5()">Linia nr 5</li>
+				<li class="line_route" onclick="openNav6()">Linia nr 1/3</li>
+				<li class="line_route" onclick="openNav7()">Linia nr 2/3</li>
+				<li class="line_route" onclick="openNav8()">Linia nr 3/2</li>
+			</ul>
+		</div>
+		<div id="pdfsidenav" class="sidenav_pdf">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNavPdf()">&times;</a>
+			<div class="sidenav linesnav">
+				<h4>pobierz rozkład PDF:</h4>
+				<span><a href="http://koscierzyna.gda.pl/portal?id=15&res_id=2216498">kierunek Szpital</a></span>
+				<span><a href="http://koscierzyna.gda.pl/portal?id=15&res_id=2216438">kierunek PKP</a></span>
+			</div>
+		</div>
+		<div id="aboutsidenav" class="sidenav_about">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNavAbout()">&times;</a>
+			<div class="about container">
+				<h4>O projekcie</h4>
+				<p>Pomysł na stworzenie aplikacji webowej - interaktywnego rozkładu jazdy
+				komunikacji miejskiej w Kościerzynie zrodził się z potrzeby szybkiego
+				sprawdzenia rozkładu jazdy przeze mnie i moich bliskich. Pomyślałem, że taka aplikacja przyda się wszystkim, którzy chcą skorzystać z komunikacji miejskiej w Kościerzynie. Jako, że zajmuję się tworzeniem stron internetowych i aplikacji webowych, a jednocześnie interesuję się hobbystycznie transportem publicznym, wiąłem się do pracy, której owoce możecie właśnie oceniać.
+				Na stronie możecie sprawdzić zarówno kiedy odjeżdża wasz najbliższy autobus, jak
+				i zobaczyć cały rozkład z wybranego przystanku, w wybranym kierunku. W menu
+				jest też możliwość sprawdzenia przebiegu poszczególnych linii oraz pobrania
+				oficjalnego rozkładu jazdy w formacie pdf ze strony Miasta Kościerzyna.
+				Projekt powstał całkowicie społecznie - pro publico bono.
+				Zachęcam do korzystania, zarówno z rozkładu, jak i z moich usług w zakresie tworzenia
+				stron internetowych i aplikacji webowych.
+				Pozdrawiam,
+				Artur Rymsza
+				Wytvórnia Kreatywna</p>
+			</div>
+		</div>
+		<div id="line1sidenav" class="sidenav_1">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 1</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Dworzec PKP</li>
+				<li>Dworcowa</li>
+				<li>3 Maja(Dworcowa)</li>
+				<li>Szopińskiego</li>
+				<li>Kartuska</li>
+				<li>Heykego</li>
+				<li>Szkolna</li>
+				<li>Marchewicza(Bolewskiej)*</li>
+				<li>Marchewicza(Bloki)*</li>
+				<li>Rogali</li>
+				<li>Strzelecka(PZU)</li>
+				<li>Sikorskiego</li>
+				<li>Skłodowskiej(Przychodnia)</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Małcużyńskiego</li>
+				<li class="main_stop">Szpital</li>
+				<li> </li>
+				<li>* - w dni robocze</li>
+			</ul>
+		</div>
+		<div id="line2sidenav" class="sidenav_2">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 2</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Dworzec PKP</li>
+				<li>Dworcowa(Michałowskiego/Fałata)</li>
+				<li>Matejki(Kossaka)</li>
+				<li>W.Stwosza(Tatarkiewicza)</li>
+				<li>W.Stwosza(Michałowicza)</li>
+				<li>W.Stwosza(Towarowa)</li>
+				<li>Przemysłowa/Bazowa</li>
+				<li>Drogowców</li>
+				<li>Drogowców(pętla)</li>
+				<li>Szopińskiego</li>
+				<li>Kartuska</li>
+				<li>Heykego</li>
+				<li>Szkolna</li>
+				<li>Marchewicza(Bolewskiej)*</li>
+				<li>Marchewicza(Bloki)*</li>
+				<li>Rogali</li>
+				<li>Strzelecka(PZU)</li>
+				<li>Sikorskiego</li>
+				<li>Skłodowskiej(Przychodnia)</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Małcużyńskiego</li>
+				<li class="main_stop">Szpital</li>
+				<li> </li>
+				<li>* - w dni robocze</li>
+			</ul>
+		</div>
+		<div id="line3sidenav" class="sidenav_3">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 3</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Dworzec PKP</li>
+				<li>Dworcowa(Michałowskiego/Fałata)</li>
+				<li>Matejki</li>
+				<li>Skarszewska</li>
+				<li>Kapliczna</li>
+				<li>Galeria Wybickiego</li>
+				<li>8 Marca(Szkoła Jedynka)</li>
+				<li>Staszica</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Małcużyńskiego</li>
+				<li class="main_stop">Szpital</li>
+			</ul>
+		</div>
+		<div id="line4sidenav" class="sidenav_4">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 4</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Dworzec PKP</li>
+				<li>Dworcowa(Michałowskiego/Fałata)</li>
+				<li>Matejki</li>
+				<li>Skarszewska</li>
+				<li>Kapliczna</li>
+				<li>Galeria Wybickiego</li>
+				<li>Roltex-kier.Szpital</li>
+				<li>Klasztorna</li>
+				<li>Wierzysko*</li>
+				<li>Chojnicka(Klasztorna)</li>
+				<li>Chojnicka(Cegielnia)</li>
+				<li>Woj.Polskiego(Chojnicka)-kier.PKP</li>
+				<li>Kościuszki-kier.PKP</li>
+				<li>Kasztanowa-kier.PKP</li>
+				<li>Staszica</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Małcużyńskiego</li>
+				<li class="main_stop">Szpital</li>
+				<li> </li>
+				<li>* - w dni robocze</li>
+			</ul>
+		</div>
+		<div id="line5sidenav" class="sidenav_5">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav5()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 5</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Dworzec PKP</li>
+				<li>Dworcowa</li>
+				<li>3 Maja(Dworcowa)</li>
+				<li>Galeria Wybickiego</li>
+				<li>8 Marca(Szkoła Jedynka)</li>
+				<li class="main_stop">Staszica</li>
+				<li>Skłodowskiej(Przychodnia)</li>
+				<li>Szopińskiego</li>
+				<li>3 Maja(Dworcowa)</li>
+				<li>Dworcowa</li>
+				<li class="main_stop">Dworzec PKP</li>
+			</ul>
+		</div>
+		<div id="line1/3sidenav" class="sidenav_6">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav6()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 1/3</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Galeria Wybickiego</li>
+				<li>8 Marca(Szkoła Jedynka)</li>
+				<li>Staszica</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Małcużyńskiego</li>
+				<li class="main_stop">Szpital</li>
+				<li>-</li>
+				<li class="main_stop">Szpital</li>
+				<li>Małcużyńskiego</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Przychodnia)</li>
+				<li>Sikorskiego</li>
+				<li>Strzelecka(PZU)</li>
+				<li>Rogali</li>
+				<li>Marchewicza(Bloki)*</li>
+				<li>Marchewicza(Bolewskiej)*</li>
+				<li>Szkolna</li>
+				<li>Heykego</li>
+				<li>Kartuska</li>
+				<li>Szopińskiego</li>
+				<li class="main_stop">Galeria Wybickiego</li>
+			</ul>
+		</div>
+		<div id="line2/3sidenav" class="sidenav_7">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav7()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 2/3</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Dworzec PKP</li>
+				<li>Dworcowa</li>
+				<li>Drogowców</li>
+				<li>Budowlanych</li>
+				<li>W.Stwosza(Towarowa)</li>
+				<li>W.Stwosza(Michałowicza)</li>
+				<li>W.Stwosza(Tatarkiewicza)</li>
+				<li>Matejki(Kossaka)</li>
+				<li>Matejki</li>
+				<li>Skarszewska</li>
+				<li>Kapliczna</li>
+				<li>Galeria Wybickiego</li>
+				<li>8 Marca(Szkoła Jedynka)</li>
+				<li>Staszica</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Małcużyńskiego</li>
+				<li class="main_stop">Szpital</li>
+			</ul>
+		</div>
+		<div id="line3/2sidenav" class="sidenav_8">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav8()">&times;</a>
+			<div class="line_plate">
+				<h4 class="line_name">Linia nr 3/2</h4>
+			</div>
+			<ul class="sidenav">
+				<li class="main_stop">Szpital</li>
+				<li>Małcużyńskiego</li>
+				<li>Skłodowskiej(Delikatesy)</li>
+				<li>Skłodowskiej("Szóstka")</li>
+				<li>Staszica</li>
+				<li>8 Marca(Szkoła Jedynka)</li>
+				<li>Galeria Wybickiego</li>
+				<li>Kapliczna</li>
+				<li>Skarszewska</li>
+				<li>Matejki</li>
+				<li>Matejki(Kossaka)</li>
+				<li>W.Stwosza(Tatarkiewicza)</li>
+				<li>W.Stwosza(Michałowicza)</li>
+				<li>W.Stwosza(Towarowa)</li>
+				<li>Budowlanych</li>
+				<li>Drogowców</li>
+				<li>Dworcowa</li>
+				<li class="main_stop">Dworzec PKP</li>
+			</ul>
+		</div>
 		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>

@@ -8,6 +8,113 @@ var period = document.getElementById('period');
 var timetableModal = document.getElementById('timetable_modal');
 var timetableContent = document.getElementById('timetable_content');
 
+function openNav() {
+    document.getElementById("menusidenav").style.width = "100%";
+}
+
+function openNavTrasy() {
+    document.getElementById("linessidenav").style.width = "100%";
+    closeNav();
+}
+
+function closeNav() {
+    document.getElementById("menusidenav").style.width = "0";
+}
+
+function closeNavTrasy() {
+    document.getElementById("linessidenav").style.width = "0";
+}
+
+function openNav1() {
+    document.getElementById("line1sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav1() {
+    document.getElementById("line1sidenav").style.width = "0";
+}
+
+function openNav2() {
+    document.getElementById("line2sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav2() {
+    document.getElementById("line2sidenav").style.width = "0";
+}
+
+function openNav3() {
+    document.getElementById("line3sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav3() {
+    document.getElementById("line3sidenav").style.width = "0";
+}
+
+function openNav4() {
+    document.getElementById("line4sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav4() {
+    document.getElementById("line4sidenav").style.width = "0";
+}
+
+function openNav5() {
+    document.getElementById("line5sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav5() {
+    document.getElementById("line5sidenav").style.width = "0";
+}
+
+function openNav6() {
+    document.getElementById("line1/3sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav6() {
+    document.getElementById("line1/3sidenav").style.width = "0";
+}
+
+function openNav7() {
+    document.getElementById("line2/3sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav7() {
+    document.getElementById("line2/3sidenav").style.width = "0";
+}
+
+function openNav8() {
+    document.getElementById("line3/2sidenav").style.width = "100%";
+    closeNavTrasy();
+}
+
+function closeNav8() {
+    document.getElementById("line3/2sidenav").style.width = "0";
+}
+
+function openNavPdf() {
+    document.getElementById("pdfsidenav").style.width = "100%";
+    closeNav();
+}
+
+function closeNavPdf() {
+    document.getElementById("pdfsidenav").style.width = "0";
+}
+
+function openNavAbout() {
+    document.getElementById("aboutsidenav").style.width = "100%";
+    closeNav();
+}
+
+function closeNavAbout() {
+    document.getElementById("aboutsidenav").style.width = "0";
+}
+
 function timetable() { 
   var busStop = window[selection.value + line.value + direction.value];
   var stop = selection.options[selection.selectedIndex].value;
@@ -24,7 +131,7 @@ function timetable() {
     yourBus.style.fontSize = '4.5vw';
     yourBus.style.textAlign = 'center';
     yourBus.style.color = '#ff5441';
-    yourBus.innerHTML = 'Wybrana linia nie odjeżdża z Twojego przystanku';
+    yourBus.innerHTML = 'Wybrana linia nie odjeżdża dziś z Twojego przystanku';
   } else {
 
     yourBus.style = null;
