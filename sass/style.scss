@@ -195,6 +195,9 @@ body {
 	    		@media (min-width: 768px) {
 	    			font-size: 2vw;
 	    		}
+	    		@media (max-width: 768px) {
+	    			padding: 0;
+	    		}
 	    	}
 	    }
 
@@ -337,17 +340,34 @@ body {
 		font-weight: 900;
 		font-size: 3vw;
 		color: $text-color;
+		@media (max-width: 768px) {
+		    font-size: 6vw;
+		}
+		
+		.about {
+			height: 90%;
+			width: auto;
+			display: flex;
+			flex-direction: column;
+	    	flex-wrap: wrap;
+	    	align-items: center;
+	    	justify-content: space-around;
+	    	align-self: center;
+		}
 
 		p {
+			width: 70vw;
+			height: 80vh;
+			max-width: 1000px;
 			text-align: justify;
 			color: $background;
 			font-weight: 300;
-			font-size: 3vw;
+			font-size: 2vw;
+			@media (max-width: 768px) {
+		    	font-size: 4vw;
+		    }
 		}
 
-		@media (max-width: 768px) {
-	    	font-size: 6vw;
-	    }
 	}
 
 	.closebtn {

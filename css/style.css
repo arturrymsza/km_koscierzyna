@@ -163,6 +163,9 @@ body {
         @media (min-width: 768px) {
           body .modal .bus_list .hours {
             font-size: 2vw; } }
+        @media (max-width: 768px) {
+          body .modal .bus_list .hours {
+            padding: 0; } }
     body .modal .close {
       font-size: 35px;
       padding: 0 3px;
@@ -285,14 +288,35 @@ body {
     font-weight: 900;
     font-size: 3vw;
     color: #3ba66d; }
-    body .sidenav_about p {
-      text-align: justify;
-      color: #222222;
-      font-weight: 300;
-      font-size: 3vw; }
     @media (max-width: 768px) {
       body .sidenav_about {
         font-size: 6vw; } }
+    body .sidenav_about .about {
+      height: 90%;
+      width: auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-item-align: center;
+          align-self: center; }
+    body .sidenav_about p {
+      width: 70vw;
+      height: 80vh;
+      max-width: 1000px;
+      text-align: justify;
+      color: #222222;
+      font-weight: 300;
+      font-size: 2vw; }
+      @media (max-width: 768px) {
+        body .sidenav_about p {
+          font-size: 4vw; } }
   body .closebtn {
     color: #3ba66d;
     top: 0;
