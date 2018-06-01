@@ -1,7 +1,7 @@
 {
  "short_name": "Rozkład - Komunikacja Miejska Kościerzyna",
  "name": "Rozkład - Komunikacja Miejska Kościerzyna",
- "display": "standalone",
+ "display": "fullscreen",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
