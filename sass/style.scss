@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@font-face {
+	font-family: 'apropal';
+	src: 
+		url('Apropal-Bold.otf')
+		format('opentype');
+	src:
+		url('Apropal-Bold.ttf')
+		format('truetype');
+}
 
 $background: #222222;
 $text-color: #3ba66d;
@@ -15,6 +24,19 @@ body {
 	font-family: 'Lato', sans-serif;
 	background: linear-gradient(to top, #4e4e4e , $background);
 	color: $text-color;
+	overflow: hidden;
+
+	.menu {
+		font-weight: 900;
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+		padding: 2vh 0 1vh 1vw;
+		font-size: 1vw;
+		@media (max-width: 768px) {
+			font-size: 4vw;
+		}
+	}
 
 	header {
 		display: flex;
@@ -23,10 +45,10 @@ body {
 		align-items: center;
 
 		h1 {
-			padding: 5vh 0 2vh;
+			font-family: 'lato', sans-serif;
 			font-size: 4vw;
 			text-transform: uppercase;
-			letter-spacing: 5px;
+			letter-spacing: 10px;
 			font-weight: 300;
 			@media (max-width: 768px) {
 				font-size: 6vw;
@@ -35,15 +57,17 @@ body {
 
 		img {
 			padding: 2vh;
-			width: 15%;
+			width: 20%;
 			border-radius: 20%;
 			@media (min-width: 768px) {
 				width: 12%;
+				padding: 1.5vh;
 			}
 		}
 
 		h2 {
-			padding: 1.4vh;
+			color: white;
+			padding-top: 1vh;
 			font-size: 1.5vw;
 			letter-spacing: 0.5vw;
 			@media (max-width: 768px) {
@@ -171,6 +195,9 @@ body {
 	    		@media (min-width: 768px) {
 	    			font-size: 2vw;
 	    		}
+	    		@media (max-width: 768px) {
+	    			padding: 0;
+	    		}
 	    	}
 	    }
 
@@ -192,6 +219,216 @@ body {
 			padding: 10px;
 			margin: 10px;
 			border-radius: 4px;
+		}
+	}
+
+	.sidenav {
+		margin: 5vh 0;
+		height: 60vh;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+	    flex-wrap: wrap;
+	    align-items: center;
+	    justify-content: space-around;
+	    &:not(.linesnav) {
+	    	align-items: flex-start;
+	    	list-style-type: circle;
+	    	margin-left: 45vw;
+	    	@media (max-width: 768px) {
+	    	margin-left: 25vw;
+	    	}
+	    }
+	}
+
+	.sidenav_menu {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+		font-weight: 700;
+		font-size: 3vw;
+		color: #fff;
+
+		span {
+			cursor: pointer;
+		}
+
+		@media (max-width: 768px) {
+	    	font-size: 6vw;
+	    }
+	}
+
+	.sidenav_lines {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		right: 0;
+	    font-weight: 900;
+	    border-radius: 3px;
+		background-color: rgba(white, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+	    @media (min-width: 768px) {
+	    	font-size: 3vw;
+	    }
+	}
+
+	.sidenav_1,
+	.sidenav_2,
+	.sidenav_3,
+	.sidenav_4,
+	.sidenav_5,
+	.sidenav_6,
+	.sidenav_7,
+	.sidenav_8 {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+	}
+
+	.sidenav_pdf {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		right: 0;
+		background-color: rgba(white, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+		font-weight: 900;
+		font-size: 3vw;
+		color: $text-color;
+		@media (max-width: 768px) {
+	    	font-size: 6vw;
+	    }
+
+		a {
+			text-decoration: none;
+			color: $text-color;
+		}
+
+		h4 {
+			color: $background;
+		}
+	}
+
+	.sidenav_about {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		right: 0;
+		background-color: rgba(white, 0.9);
+		overflow-x: hidden;
+		transition: 0.5s;
+		font-weight: 900;
+		font-size: 3vw;
+		color: $text-color;
+		@media (max-width: 768px) {
+		    font-size: 6vw;
+		}
+		
+		.about {
+			height: 90%;
+			width: auto;
+			display: flex;
+			flex-direction: column;
+	    	flex-wrap: wrap;
+	    	align-items: center;
+	    	justify-content: space-around;
+	    	align-self: center;
+		}
+
+		p {
+			width: 70vw;
+			height: 80vh;
+			max-width: 1000px;
+			text-align: justify;
+			color: $background;
+			font-weight: 300;
+			font-size: 2vw;
+			@media (max-width: 768px) {
+		    	font-size: 4vw;
+		    }
+		}
+
+	}
+
+	.closebtn {
+		color: $text-color;
+		top: 0;
+		font-size: 35px;
+	    padding: 0 3px;
+	    cursor: pointer;
+	    text-decoration: none;
+	}
+
+	.main_stop {
+		color: $yellow;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.line_route {
+	    cursor: pointer;
+	    color: black;
+	}
+
+	.line_plate {
+		height: 20vh;
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	align-items: flex-start;
+    	justify-content: center;
+	    .line_name {
+			background-color: white;
+		    color: black;
+		    padding: 5px;
+		    font-weight: 900;
+		    border-radius: 3px;
+		    margin-left: 45vw;
+	    	@media (max-width: 768px) {
+	    		margin-left: 25vw;
+	    	}
+		    @media (min-width: 768px) {
+		    	font-size: 2vw;
+		    }
+	    }
+	}
+
+	footer {
+		width: 100%;
+		font-family: 'apropal', sans-serif;
+		font-size: 1.5vh;
+		color: white;
+		position: fixed;
+		bottom: 2vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		.wytvornia_logo {
+			height: 6vh;
+			border-radius: 50%;
+			margin-left: 1vh;
 		}
 	}
 }

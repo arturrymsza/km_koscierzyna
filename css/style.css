@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@font-face {
+  font-family: 'apropal';
+  src: url("Apropal-Bold.otf") format("opentype");
+  src: url("Apropal-Bold.ttf") format("truetype"); }
 .container {
   width: 100%;
   max-width: 1140px;
@@ -8,7 +12,18 @@ body {
   height: 100vh;
   font-family: 'Lato', sans-serif;
   background: linear-gradient(to top, #4e4e4e, #222222);
-  color: #3ba66d; }
+  color: #3ba66d;
+  overflow: hidden; }
+  body .menu {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 2vh 0 1vh 1vw;
+    font-size: 1vw; }
+    @media (max-width: 768px) {
+      body .menu {
+        font-size: 4vw; } }
   body header {
     display: -ms-flexbox;
     display: flex;
@@ -19,23 +34,25 @@ body {
     -ms-flex-align: center;
         align-items: center; }
     body header h1 {
-      padding: 5vh 0 2vh;
+      font-family: 'lato', sans-serif;
       font-size: 4vw;
       text-transform: uppercase;
-      letter-spacing: 5px;
+      letter-spacing: 10px;
       font-weight: 300; }
       @media (max-width: 768px) {
         body header h1 {
           font-size: 6vw; } }
     body header img {
       padding: 2vh;
-      width: 15%;
+      width: 20%;
       border-radius: 20%; }
       @media (min-width: 768px) {
         body header img {
-          width: 12%; } }
+          width: 12%;
+          padding: 1.5vh; } }
     body header h2 {
-      padding: 1.4vh;
+      color: white;
+      padding-top: 1vh;
       font-size: 1.5vw;
       letter-spacing: 0.5vw; }
       @media (max-width: 768px) {
@@ -146,6 +163,9 @@ body {
         @media (min-width: 768px) {
           body .modal .bus_list .hours {
             font-size: 2vw; } }
+        @media (max-width: 768px) {
+          body .modal .bus_list .hours {
+            padding: 0; } }
     body .modal .close {
       font-size: 35px;
       padding: 0 3px;
@@ -162,3 +182,196 @@ body {
       padding: 10px;
       margin: 10px;
       border-radius: 4px; }
+  body .sidenav {
+    margin: 5vh 0;
+    height: 60vh;
+    width: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    body .sidenav:not(.linesnav) {
+      -ms-flex-align: start;
+          align-items: flex-start;
+      list-style-type: circle;
+      margin-left: 45vw; }
+      @media (max-width: 768px) {
+        body .sidenav:not(.linesnav) {
+          margin-left: 25vw; } }
+  body .sidenav_menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-weight: 700;
+    font-size: 3vw;
+    color: #fff; }
+    body .sidenav_menu span {
+      cursor: pointer; }
+    @media (max-width: 768px) {
+      body .sidenav_menu {
+        font-size: 6vw; } }
+  body .sidenav_lines {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    font-weight: 900;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; }
+    @media (min-width: 768px) {
+      body .sidenav_lines {
+        font-size: 3vw; } }
+  body .sidenav_1,
+  body .sidenav_2,
+  body .sidenav_3,
+  body .sidenav_4,
+  body .sidenav_5,
+  body .sidenav_6,
+  body .sidenav_7,
+  body .sidenav_8 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; }
+  body .sidenav_pdf {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-weight: 900;
+    font-size: 3vw;
+    color: #3ba66d; }
+    @media (max-width: 768px) {
+      body .sidenav_pdf {
+        font-size: 6vw; } }
+    body .sidenav_pdf a {
+      text-decoration: none;
+      color: #3ba66d; }
+    body .sidenav_pdf h4 {
+      color: #222222; }
+  body .sidenav_about {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-weight: 900;
+    font-size: 3vw;
+    color: #3ba66d; }
+    @media (max-width: 768px) {
+      body .sidenav_about {
+        font-size: 6vw; } }
+    body .sidenav_about .about {
+      height: 90%;
+      width: auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-item-align: center;
+          align-self: center; }
+    body .sidenav_about p {
+      width: 70vw;
+      height: 80vh;
+      max-width: 1000px;
+      text-align: justify;
+      color: #222222;
+      font-weight: 300;
+      font-size: 2vw; }
+      @media (max-width: 768px) {
+        body .sidenav_about p {
+          font-size: 4vw; } }
+  body .closebtn {
+    color: #3ba66d;
+    top: 0;
+    font-size: 35px;
+    padding: 0 3px;
+    cursor: pointer;
+    text-decoration: none; }
+  body .main_stop {
+    color: #ffff66;
+    text-transform: uppercase;
+    font-weight: 700; }
+  body .line_route {
+    cursor: pointer;
+    color: black; }
+  body .line_plate {
+    height: 20vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    body .line_plate .line_name {
+      background-color: white;
+      color: black;
+      padding: 5px;
+      font-weight: 900;
+      border-radius: 3px;
+      margin-left: 45vw; }
+      @media (max-width: 768px) {
+        body .line_plate .line_name {
+          margin-left: 25vw; } }
+      @media (min-width: 768px) {
+        body .line_plate .line_name {
+          font-size: 2vw; } }
+  body footer {
+    width: 100%;
+    font-family: 'apropal', sans-serif;
+    font-size: 1.5vh;
+    color: white;
+    position: fixed;
+    bottom: 2vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    body footer .wytvornia_logo {
+      height: 6vh;
+      border-radius: 50%;
+      margin-left: 1vh; }
