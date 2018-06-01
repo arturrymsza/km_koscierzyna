@@ -1,5 +1,7 @@
 {
- "name": "App",
+ "short_name": "Rozkład - Komunikacja Miejska Kościerzyna",
+ "name": "Rozkład - Komunikacja Miejska Kościerzyna",
+ "display": "standalone",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
