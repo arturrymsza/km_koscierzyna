@@ -44,7 +44,7 @@ body {
           font-size: 6vw; } }
     body header img {
       padding: 2vh;
-      width: 20%;
+      width: 17%;
       border-radius: 20%; }
       @media (min-width: 768px) {
         body header img {
@@ -65,7 +65,7 @@ body {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    padding: 3vh; }
+    padding: 2vh; }
     body .check h2 {
       color: #ffff66;
       padding: 2vh;
@@ -110,7 +110,7 @@ body {
       font-size: 10vw; }
       @media (max-width: 768px) {
         body .result .your_time {
-          font-size: 20vw;
+          font-size: 17vw;
           padding: 5px; } }
   body .modal {
     display: none;
@@ -370,7 +370,8 @@ body {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    z-index: -1; }
     body footer .wytvornia_logo {
       height: 6vh;
       border-radius: 50%;
