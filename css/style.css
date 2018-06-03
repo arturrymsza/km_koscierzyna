@@ -110,7 +110,7 @@ body {
       font-size: 10vw; }
       @media (max-width: 768px) {
         body .result .your_time {
-          font-size: 17vw;
+          font-size: 15vw;
           padding: 5px; } }
   body .modal {
     display: none;
