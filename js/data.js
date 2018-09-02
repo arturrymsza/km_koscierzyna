@@ -308,26 +308,26 @@ if (weekDay > 0 && weekDay < 6) {
   var kapliczna1szpitalDif = ['18:24'];
 
   /*line 2 direction szpital*/
-  var pkp2szpitalDif = ['9:25'];
-  var michalowskiego2szpitalDif = ['9:26'];
-  var kossaka2szpitalDif = ['9:27'];
-  var tatarkiewicza2szpitalDif = ['9:29'];
-  var michalowicza2szpitalDif = ['9:30'];
-  var towarowa2szpitalDif = ['9:31'];
-  var bazowa2szpitalDif = ['9:32'];
-  var drogowcow2szpitalDif = ['9:33'];
-  var petla2szpitalDif = ['9:34'];
-  var szopinskiego2szpitalDif = ['9:36'];
-  var kartuska2szpitalDif = ['9:38'];
-  var heykego2szpitalDif = ['9:39'];
-  var szkolna2szpitalDif = ['9:41'];
-  var rogali2szpitalDif = ['9:42'];
-  var strzelecka2szpitalDif = ['9:43'];
-  var sikorskiego2szpitalDif = ['9:44'];
-  var rozana2szpitalDif = ['9:45'];
-  var konopnickiej2szpitalDif = ['9:46'];
-  var szydlice2szpitalDif = ['9:47'];
-  var malcuzynskiego2szpitalDif = ['9:48'];
+  var pkp2szpitalDif = ['9:35'];
+  var michalowskiego2szpitalDif = ['9:36'];
+  var kossaka2szpitalDif = ['9:37'];
+  var tatarkiewicza2szpitalDif = ['9:39'];
+  var michalowicza2szpitalDif = ['9:40'];
+  var towarowa2szpitalDif = ['9:41'];
+  var bazowa2szpitalDif = ['9:42'];
+  var drogowcow2szpitalDif = ['9:43'];
+  var petla2szpitalDif = ['9:44'];
+  var szopinskiego2szpitalDif = ['9:46'];
+  var kartuska2szpitalDif = ['9:48'];
+  var heykego2szpitalDif = ['9:49'];
+  var szkolna2szpitalDif = ['9:51'];
+  var rogali2szpitalDif = ['9:52'];
+  var strzelecka2szpitalDif = ['9:53'];
+  var sikorskiego2szpitalDif = ['9:54'];
+  var rozana2szpitalDif = ['9:55'];
+  var konopnickiej2szpitalDif = ['9:56'];
+  var szydlice2szpitalDif = ['9:57'];
+  var malcuzynskiego2szpitalDif = ['9:58'];
 
   /*line 3 direction szpital*/
   var pkp3szpitalDif = ['7:39', '14:40', '17:27'];
@@ -452,26 +452,26 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
   var kapliczna1szpital = ['18:24'];
 
   /*line 2 direction szpital*/
-  var pkp2szpital = ['9:25'];
-  var michalowskiego2szpital = ['9:26'];
-  var kossaka2szpital = ['9:27'];
-  var tatarkiewicza2szpital = ['9:29'];
-  var michalowicza2szpital = ['9:30'];
-  var towarowa2szpital = ['9:31'];
-  var bazowa2szpital = ['9:32'];
-  var drogowcow2szpital = ['9:33'];
-  var petla2szpital = ['9:34'];
-  var szopinskiego2szpital = ['9:36'];
-  var kartuska2szpital = ['9:38'];
-  var heykego2szpital = ['9:39'];
-  var szkolna2szpital = ['9:41'];
-  var rogali2szpital = ['9:42'];
-  var strzelecka2szpital = ['9:43'];
-  var sikorskiego2szpital = ['9:44'];
-  var rozana2szpital = ['9:45'];
-  var konopnickiej2szpital = ['9:46'];
-  var szydlice2szpital = ['9:47'];
-  var malcuzynskiego2szpital = ['9:48'];
+  var pkp2szpital = ['9:35'];
+  var michalowskiego2szpital = ['9:36'];
+  var kossaka2szpital = ['9:37'];
+  var tatarkiewicza2szpital = ['9:39'];
+  var michalowicza2szpital = ['9:40'];
+  var towarowa2szpital = ['9:41'];
+  var bazowa2szpital = ['9:42'];
+  var drogowcow2szpital = ['9:43'];
+  var petla2szpital = ['9:44'];
+  var szopinskiego2szpital = ['9:46'];
+  var kartuska2szpital = ['9:48'];
+  var heykego2szpital = ['9:49'];
+  var szkolna2szpital = ['9:51'];
+  var rogali2szpital = ['9:52'];
+  var strzelecka2szpital = ['9:53'];
+  var sikorskiego2szpital = ['9:54'];
+  var rozana2szpital = ['9:55'];
+  var konopnickiej2szpital = ['9:56'];
+  var szydlice2szpital = ['9:57'];
+  var malcuzynskiego2szpital = ['9:58'];
 
   /*line 3 direction szpital*/
   var pkp3szpital = ['7:39', '14:40', '17:27'];
