@@ -307,7 +307,7 @@ body {
 			width: 100vw;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;
+			justify-content: center;
 			align-items: center;
 
 			img {
@@ -317,7 +317,7 @@ body {
 
 			@media (max-width: 768px) {
 				flex-direction: column;
-				height: 90vh;
+				height: 150vh;
 			}
 		}
 	}
