@@ -36,7 +36,6 @@
 		</header>
 		<main class="container">
 			<section class="check">
-				<p style="color:red;font-weight: bold;">UWAGA! ROZKŁAD LINI 1 I 3 W KIERUNKU PKP AKTUALNY! POZOSTAŁE LINIE W TRAKCIE AKTUALIZACJI!</p>
 				<h2>Wybierz swój przystanek, linię i kierunek</h2>
 				<div class="choice">
 					<select id="selection">
@@ -69,21 +68,22 @@
 						<option value = "kossaka">Matejki(Kossaka)</option>
 						<option value = "tatarkiewicza">W.Stwosza(Tatarkiewicza)</option>
 						<option value = "michalowicza">W.Stwosza(Michałowicza)</option>
-						<option value = "towarowa">W.Stwosza(Towarowa)</option>
-						<option value = "budowlanych">Budowlanych</option>
-						<option value = "drogowcow">Drogowców</option>
-						<option value = "petla">Drogowców(pętla)</option>
+						<option value = "stwoszatowarowa">W.Stwosza(Towarowa)</option>
+						<option value = "przemyslowa">Przemysłowa II</option>
+						<option value = "towarowa">Towarowa</option>
+						<option value = "rolnicza">Towarowa(Rolnicza)</option>
 					</select>
 					<select id="line">
 						<option>Wybierz linię</option>
 						<option value = "1">linia 1</option>
+						<option value = "2">linia 2</option>
 						<option value = "3">linia 3</option>
-						<option value = "24">linia 2(aktualizacja)</option>
 					</select>
 					<select id="direction">
 						<option>Wybierz kierunek</option>
 						<option value = "pkp">Dworzec PKP</option>
-						<option value = "szpital3">Szpital(aktualizacja)</option>
+						<option value = "szpital">Szpital</option>
+						<option value = "pkp">Towarowa</option>
 					</select>
 				</div>
 				<button id="check_bus" class="check_bus">sprawdź</button>
@@ -123,11 +123,6 @@
 				<li onclick="openNav1()" class="line_route">Linia nr 1</li>
 				<li class="line_route" onclick="openNav2()">Linia nr 2</li>
 				<li class="line_route" onclick="openNav3()">Linia nr 3</li>
-				<li class="line_route" onclick="openNav4()">Linia nr 4</li>
-				<li class="line_route" onclick="openNav5()">Linia nr 5</li>
-				<li class="line_route" onclick="openNav6()">Linia nr 1/3</li>
-				<li class="line_route" onclick="openNav7()">Linia nr 2/3</li>
-				<li class="line_route" onclick="openNav8()">Linia nr 3/2</li>
 			</ul>
 		</div>
 		<div id="pdfsidenav" class="sidenav_pdf">
