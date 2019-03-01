@@ -298,6 +298,28 @@ body {
 		background-color: rgba(0,0,0,0.9);
 		overflow-x: hidden;
 		transition: 0.5s;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.route {
+			height: 80vh;
+			width: 100vw;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+
+			img {
+				width: 90vw; 
+				max-width: 900px;
+			}
+
+			@media (max-width: 768px) {
+				flex-direction: column;
+				height: 90vh;
+			}
+		}
 	}
 
 	.sidenav_pdf {
