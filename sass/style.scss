@@ -234,9 +234,9 @@ body {
 	    &:not(.linesnav) {
 	    	align-items: flex-start;
 	    	list-style-type: circle;
-	    	margin-left: 45vw;
+	    	margin-left: 5vw;
 	    	@media (max-width: 768px) {
-	    	margin-left: 25vw;
+	    	margin-left: 15vw;
 	    	}
 	    }
 	}
