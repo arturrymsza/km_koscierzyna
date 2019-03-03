@@ -228,7 +228,7 @@ body {
 		width: auto;
 		display: flex;
 		flex-direction: column;
-	    flex-wrap: wrap;
+		flex-wrap: wrap;
 	    align-items: center;
 	    justify-content: space-around;
 	    &:not(.linesnav) {
@@ -236,7 +236,8 @@ body {
 	    	list-style-type: circle;
 	    	margin-left: 5vw;
 	    	@media (max-width: 768px) {
-	    	margin-left: 15vw;
+			margin-left: 15vw;
+			display: block;
 	    	}
 	    }
 	}
@@ -415,7 +416,6 @@ body {
 	.line_plate {
 		height: 20vh;
     	display: flex;
-    	flex-direction: column;
     	flex-wrap: wrap;
     	align-items: flex-start;
     	justify-content: center;
@@ -427,7 +427,7 @@ body {
 		    border-radius: 3px;
 		    margin-left: 45vw;
 	    	@media (max-width: 768px) {
-	    		margin-left: 25vw;
+	    		margin-left: 0vw;
 	    	}
 		    @media (min-width: 768px) {
 		    	font-size: 2vw;

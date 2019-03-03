@@ -317,6 +317,7 @@ body .sidenav:not(.linesnav) {
 @media (max-width: 768px) {
   body .sidenav:not(.linesnav) {
     margin-left: 15vw;
+    display: block;
   }
 }
 
@@ -565,10 +566,6 @@ body .line_plate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: start;
@@ -590,7 +587,7 @@ body .line_plate .line_name {
 
 @media (max-width: 768px) {
   body .line_plate .line_name {
-    margin-left: 25vw;
+    margin-left: 0vw;
   }
 }
 
