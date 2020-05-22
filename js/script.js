@@ -8,7 +8,7 @@ var period = document.getElementById('period');
 var timetableModal = document.getElementById('timetable_modal');
 var timetableContent = document.getElementById('timetable_content');
 
-alert('Uwaga! Z uwagi na zagrożenie koronawirusem, od 20.03.2020 r., Miasto Kościerzyna do odwołania wprowadziło tymczasowy rozkład jazdy!');
+alert('Uwaga! Z powodu zagrożenia koronawirusem, od 20.03.2020 r., Miasto Kościerzyna do odwołania wprowadziło tymczasowy rozkład jazdy!');
 
 function openNav() {
     document.getElementById("menusidenav").style.width = "100%";
