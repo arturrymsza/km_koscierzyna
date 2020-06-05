@@ -8,6 +8,17 @@ var period = document.getElementById('period');
 var timetableModal = document.getElementById('timetable_modal');
 var timetableContent = document.getElementById('timetable_content');
 
+function disableLines() {
+  document.getElementById("wyborLinia1").disabled=false;
+  document.getElementById("wyborLinia2").disabled=false;
+  document.getElementById("wyborLinia3").disabled=false;
+
+  if(selection.value == "rogali") {
+    document.getElementById("wyborLinia2").disabled=true;
+    document.getElementById("wyborLinia3").disabled=true;
+  }
+}
+
 function openNav() {
     document.getElementById("menusidenav").style.width = "100%";
 }
@@ -222,4 +233,5 @@ function bus() {
   timetable();
 }
 
+selection.addEventListener('change', disableLines);
 checkBus.addEventListener('click', bus);
