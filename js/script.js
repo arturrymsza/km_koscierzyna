@@ -7,11 +7,39 @@ var checkBus = document.getElementById('check_bus');
 var period = document.getElementById('period');
 var timetableModal = document.getElementById('timetable_modal');
 var timetableContent = document.getElementById('timetable_content');
+var stopsWithoutLine1 = ["maja","dworcowa","staszica","marca","kossaka","tatarkiewicza",
+    "michalowicza","stwoszatowarowa","przemyslowa","towarowa","rolnicza"];
+var stopsWithoutLine2 = ["maja","dworcowa","staszica","marca","szpital","malcuzynskiego",
+    "szydlice","konopnickiej","rozana","sikorskiego","strzelecka","rogali","marchewicza","bolewskiej",
+    "szkolna","heykego","kartuska","szopinskiego","galeria","mlynska","kapliczna","skarszewska",
+    "matejki"];
+var stopsWithoutLine3 = ["rozana","sikorskiego","strzelecka","rogali","marchewicza","bolewskiej",
+    "szkolna","heykego","kartuska","szopinskiego","kapliczna","skarszewska",
+    "matejki","kossaka","tatarkiewicza","michalowicza","stwoszatowarowa",
+    "przemyslowa","towarowa","rolnicza","michalowskiego"];
+var listOfStopsWithoutBus = [stopsWithoutLine1,stopsWithoutLine2,stopsWithoutLine3];
 
 function disableLines() {
   document.getElementById("wyborLinia1").disabled=false;
   document.getElementById("wyborLinia2").disabled=false;
   document.getElementById("wyborLinia3").disabled=false;
+
+  for(var i = 0; i<listOfStopsWithoutBus.length; i++) {
+    for(var j = 0; j<listOfStopsWithoutBus[i].length; j++) {
+      if(selection.value == listOfStopsWithoutBus[i][j]) {
+        if(i==0) {
+          document.getElementById("wyborLinia1").disabled=true;
+        }
+        if(i==1) {
+          document.getElementById("wyborLinia2").disabled=true;
+        }
+        if(i==2) {
+          document.getElementById("wyborLinia3").disabled=true;
+        }
+        break;
+      }
+    }
+  }
 
   if(selection.value == "rogali") {
     document.getElementById("wyborLinia2").disabled=true;
