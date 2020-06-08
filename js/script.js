@@ -36,14 +36,8 @@ function disableLines() {
         if(i==2) {
           document.getElementById("wyborLinia3").disabled=true;
         }
-        break;
       }
     }
-  }
-
-  if(selection.value == "rogali") {
-    document.getElementById("wyborLinia2").disabled=true;
-    document.getElementById("wyborLinia3").disabled=true;
   }
 }
 
