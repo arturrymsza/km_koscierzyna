@@ -39,6 +39,15 @@ function disableLines() {
       }
     }
   }
+  if(document.getElementById("wyborLinia2").disabled==true && document.getElementById("wyborLinia3").disabled==true) {
+    line.selectedIndex = "1";
+  } else if (document.getElementById("wyborLinia1").disabled==true && document.getElementById("wyborLinia3").disabled==true) {
+    line.selectedIndex = "2";
+  } else if (document.getElementById("wyborLinia1").disabled==true && document.getElementById("wyborLinia2").disabled==true) {
+    line.selectedIndex = "3";
+  } else {
+    line.selectedIndex = "0";
+  }
 }
 
 function openNav() {
