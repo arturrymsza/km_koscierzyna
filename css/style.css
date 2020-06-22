@@ -625,4 +625,20 @@ body footer .wytvornia_logo {
   border-radius: 50%;
   margin-left: 1vh;
 }
+
+body footer .reklama {
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  body footer .reklama {
+    height: 18vh;
+  }
+}
+
+@media (min-width: 769px) {
+  body footer .reklama {
+    height: 10vh;
+  }
+}
 /*# sourceMappingURL=style.css.map */
