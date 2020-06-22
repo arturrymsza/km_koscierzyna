@@ -449,9 +449,11 @@ body {
 		z-index: 1;
 
 		.wytvornia_logo {
-			height: 6vh;
-			border-radius: 50%;
-			margin-left: 1vh;
+			//height: 6vh;
+			//border-radius: 50%;
+			//margin-left: 1vh;
+			height: 18vh;
+			z-index: -1;
 		}
 	}
 }
