@@ -436,17 +436,17 @@ body {
 	}
 
 	footer {
-		width: 100%;
+		width: 100vw;
 		font-family: 'apropal', sans-serif;
 		font-size: 1.5vh;
 		color: white;
-		position: fixed;
-		bottom: 2vh;
+		position: absolute; //fixed
+		bottom: 5px; //2vh
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		z-index: 1;
+		//z-index: 1;
 
 		.wytvornia_logo {
 			height: 6vh;
@@ -455,14 +455,19 @@ body {
 			
 		}
 		
-		.reklama{
+		.reklama{		
 			@media (max-width: 768px) {
-	    		height: 18vh;
+				@media (max-height: 600px) {
+					height: 10vh;
+				}
+				@media (min-height: 601px) {
+					height: 16vh;
+				}
 	    	}
 		    @media (min-width: 769px) {
 				height: 10vh;
 		    }
-			z-index: -1;
+			
 		}
 	}
 }

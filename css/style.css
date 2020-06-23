@@ -598,12 +598,12 @@ body .line_plate .line_name {
 }
 
 body footer {
-  width: 100%;
+  width: 100vw;
   font-family: 'apropal', sans-serif;
   font-size: 1.5vh;
   color: white;
-  position: fixed;
-  bottom: 2vh;
+  position: absolute;
+  bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,7 +617,6 @@ body footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
 }
 
 body footer .wytvornia_logo {
@@ -626,13 +625,15 @@ body footer .wytvornia_logo {
   margin-left: 1vh;
 }
 
-body footer .reklama {
-  z-index: -1;
+@media (max-width: 768px) and (max-height: 600px) {
+  body footer .reklama {
+    height: 10vh;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-height: 601px) {
   body footer .reklama {
-    height: 18vh;
+    height: 16vh;
   }
 }
 
