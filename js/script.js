@@ -1,5 +1,6 @@
 const hn = now.getHours();
 const mn = now.getMinutes();
+const day = now.getDay();
 var selection = document.getElementById('selection');
 var line = document.getElementById('line');
 var direction = document.getElementById('direction');
@@ -138,7 +139,21 @@ function timetable() {
       var date = new Date("February 23 2018 " + busStop[i]);
       var ht = date.getHours();
       var mt = date.getMinutes(); 
-      if (ht > hn || (ht === hn && mn < mt)) {break;}
+      if (ht > hn || (ht === hn && mn < mt)) 
+      {
+      break;   
+      }
+
+      if(i === (busStop.length - 1) && ( ht<hn || (ht===hn && mn > mt) )) 
+      {
+          if(day == 5 || day == 7) {
+            busStop = window[selection.value + line.value + direction.value + "Dif"];
+          }
+          date = new Date("February 23 2018 " + busStop[0]);
+          ht = date.getHours();
+          mt = date.getMinutes();
+          break;
+      } 
     }
     
     if (mt < 10) {
