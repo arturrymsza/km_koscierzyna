@@ -28,13 +28,13 @@ if (weekDay > 0 && weekDay < 6) {
   var michalowskiego1pkp = [ '5:37',	 '6:22',	 '7:12',	 '7:42',	 '8:12',	 '8:42',	 '9:22',	'10:12',	'12:12',	'13:12',	'13:52',	'14:32',	'15:12',	'15:42',	'16:47',	'17:17',	'18:32',	'19:32'];
 
   /*line 2 direction towarowa*/
-  var pkp2pkp = ['7:25',	'14:35',	'15:35'];
-  var michalowskiego2pkp = ['7:26',	'14:36',	'15:36'];
-  var kossaka2pkp =['7:27',	'14:37',	'15:37'];
-  var tatarkiewicza2pkp = ['7:29',	'14:39',	'15:39'];
-  var michalowicza2pkp = ['7:30',	'14:40',	'15:40'];
-  var stwoszatowarowa2pkp =['7:31',	'14:41',	'15:41'];
-  var przemyslowa2pkp =[ '6:33',	 '7:33',	'14:43',	'15:43'];
+  var pkp2pkp = ['6:55',	'14:35',	'15:35'];
+  var michalowskiego2pkp = ['6:56',	'14:36',	'15:36'];
+  var kossaka2pkp =['6:57',	'14:37',	'15:37'];
+  var tatarkiewicza2pkp = ['6:59',	'14:39',	'15:39'];
+  var michalowicza2pkp = ['7:00',	'14:40',	'15:40'];
+  var stwoszatowarowa2pkp =['7:01',	'14:41',	'15:41'];
+  var przemyslowa2pkp =[ '7:03',	'14:43',	'15:43'];
 
   /*line 3 direction pkp*/
   var szpital3pkp = [ '8:25', '9:25',	'10:25',	'11:25',	'12:25',	'13:25',	'16:00',	'17:40',	'20:20'];
@@ -71,14 +71,14 @@ if (weekDay > 0 && weekDay < 6) {
   var malcuzynskiego1szpital =   ['5:39', '6:44', '7:14', '7:44', '8:14', '8:44', '9:44',	'11:44',	'12:44',	'13:24',	'14:04',	'14:44',	'15:24',	'15:44',	'16:24',	'16:54',	'17:34',	'18:04',	'18:34',	'19:04',	'20:14',	'21:29'];
 
   /*line 2 direction szpital*/
-  var towarowa2szpital =['6:37',	 '7:37',	'14:47',	'15:47'];
-  var rolnicza2szpital =['6:38',	 '7:38',	'14:48',	'15:48'];
-  var stwoszatowarowa2szpital =['6:39',	 '7:39',	'14:49'];
-  var michalowicza2szpital =['6:40',	 '7:40',	'14:50'];
-  var tatarkiewicza2szpital =['6:41',	 '7:41',	'14:51'];
-  var kossaka2szpital =['6:43',	 '7:43',	'14:53'];
-  var michalowskiego2szpital = ['6:44',	 '7:44',	'14:54'];
-  var pkp2szpital = ['6:45',	 '7:45',	'14:55'];
+  var towarowa2szpital =['6:37',	 '7:07',	'14:47',	'15:47'];
+  var rolnicza2szpital =['6:38',	 '7:08',	'14:48',	'15:48'];
+  var stwoszatowarowa2szpital =['6:39',	 '7:09',	'14:49', '15:49'];
+  var michalowicza2szpital =['6:40',	 '7:10',	'14:50', '15:50'];
+  var tatarkiewicza2szpital =['6:41',	 '7:11',	'14:51', '15:51'];
+  var kossaka2szpital =['6:43',	 '7:13',	'14:53', '15:53'];
+  var michalowskiego2szpital = ['6:44',	 '7:14',	'14:54', '15:54'];
+  var pkp2szpital = ['6:45',	 '7:15',	'14:55', '15:55'];
   
   /*line 3 direction szpital*/
   var pkp3szpital = ['8:55',	 '9:55',	'10:55',	'11:55',	'12:55',	'13:55'];
@@ -263,13 +263,13 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
     var michalowskiego1pkpDif = [ '5:37',	 '6:22',	 '7:12',	 '7:42',	 '8:12',	 '8:42',	 '9:22',	'10:12',	'12:12',	'13:12',	'13:52',	'14:32',	'15:12',	'15:42',	'16:47',	'17:17',	'18:32',	'19:32'];
   
     /*line 2 direction towarowa*/
-    var pkp2pkpDif = ['7:25',	'14:35',	'15:35'];
-    var michalowskiego2pkpDif = ['7:26',	'14:36',	'15:36'];
-    var kossaka2pkpDif =['7:27',	'14:37',	'15:37'];
-    var tatarkiewicza2pkpDif = ['7:29',	'14:39',	'15:39'];
-    var michalowicza2pkpDif = ['7:30',	'14:40',	'15:40'];
-    var stwoszatowarowa2pkpDif =['7:31',	'14:41',	'15:41'];
-    var przemyslowa2pkpDif =[ '6:33',	 '7:33',	'14:43',	'15:43'];
+    var pkp2pkpDif = ['6:55',	'14:35',	'15:35'];
+    var michalowskiego2pkpDif = ['6:56',	'14:36',	'15:36'];
+    var kossaka2pkpDif =['6:57',	'14:37',	'15:37'];
+    var tatarkiewicza2pkpDif = ['6:59',	'14:39',	'15:39'];
+    var michalowicza2pkpDif = ['7:00',	'14:40',	'15:40'];
+    var stwoszatowarowa2pkpDif =['7:01',	'14:41',	'15:41'];
+    var przemyslowa2pkpDif =[ '7:03',	'14:43',	'15:43'];
   
     /*line 3 direction pkp*/
     var szpital3pkpDif = [ '8:25', '9:25',	'10:25',	'11:25',	'12:25',	'13:25',	'16:00',	'17:40',	'20:20'];
@@ -306,14 +306,14 @@ if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || ho
     var malcuzynskiego1szpitalDif =   ['5:39', '6:44', '7:14', '7:44', '8:14', '8:44', '9:44',	'11:44',	'12:44',	'13:24',	'14:04',	'14:44',	'15:24',	'15:44',	'16:24',	'16:54',	'17:34',	'18:04',	'18:34',	'19:04',	'20:14',	'21:29'];
   
     /*line 2 direction szpital*/
-    var towarowa2szpitalDif =['6:37',	 '7:37',	'14:47',	'15:47'];
-    var rolnicza2szpitalDif =['6:38',	 '7:38',	'14:48',	'15:48'];
-    var stwoszatowarowa2szpitalDif =['6:39',	 '7:39',	'14:49'];
-    var michalowicza2szpitalDif =['6:40',	 '7:40',	'14:50'];
-    var tatarkiewicza2szpitalDif =['6:41',	 '7:41',	'14:51'];
-    var kossaka2szpitalDif =['6:43',	 '7:43',	'14:53'];
-    var michalowskiego2szpitalDif = ['6:44',	 '7:44',	'14:54'];
-    var pkp2szpitalDif = ['6:45',	 '7:45',	'14:55'];
+    var towarowa2szpitalDif =['6:37',	 '7:07',	'14:47',	'15:47'];
+    var rolnicza2szpitalDif =['6:38',	 '7:08',	'14:48',	'15:48'];
+    var stwoszatowarowa2szpitalDif =['6:39',	 '7:09',	'14:49', '15:49'];
+    var michalowicza2szpitalDif =['6:40',	 '7:10',	'14:50', '15:50'];
+    var tatarkiewicza2szpitalDif =['6:41',	 '7:11',	'14:51', '15:51'];
+    var kossaka2szpitalDif =['6:43',	 '7:13',	'14:53', '15:53'];
+    var michalowskiego2szpitalDif = ['6:44',	 '7:14',	'14:54', '15:54'];
+    var pkp2szpitalDif = ['6:45',	 '7:15',	'14:55', '15:55'];
     
     /*line 3 direction szpital*/
     var pkp3szpitalDif = ['8:55',	 '9:55',	'10:55',	'11:55',	'12:55',	'13:55'];
