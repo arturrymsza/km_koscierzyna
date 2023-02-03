@@ -165,8 +165,8 @@ if (weekDay > 0 && weekDay < 6) {
   var dayTypeDif = "soboty, niedziele i święta";
 };
 
-if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || holiday === "213" || holiday === "223" || holiday === "14"
-    || holiday === "34" || holiday === "205" || holiday === "157" || holiday === "110" || holiday === "1110"
+if (weekDay === 0 || weekDay === 6 || holiday === "10" || holiday === "60" || holiday === "93" || holiday === "103" || holiday === "14"
+    || holiday === "34" || holiday === "85" || holiday === "157" || holiday === "110" || holiday === "1110"
     || holiday === "2511" || holiday === "2611") {
   
   /*line 1 direction pkp*/
