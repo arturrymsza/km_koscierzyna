@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.29.1",
     "glob-run": "^0.1.6",
     "jshint": "^2.9.5",
     "nu-html-checker": "^0.1.0",
