@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120286908-1"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
-  			gtag('config', 'UA-120286908-1');
-		</script>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5L8NCCHZ');</script>
+	<!-- End Google Tag Manager -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="msapplication-TileColor" content="#222222">
@@ -33,6 +32,10 @@
 		<title>Rozkład - Komunikacja Miejska Kościerzyna</title>
 	</head>
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L8NCCHZ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 		<div class="menu container">
 			<h3 onclick="openNav()">menu</h3>
 		</div>
@@ -44,10 +47,10 @@
 		</header>
 		<main class="container">
 			<section class="check">
-				<h2>Wybierz swój przystanek, linię i kierunek</h2>
+				<h2 id="guide">Wybierz swój przystanek, linię i kierunek</h2>
 				<div class="choice">
 					<select id="selection">
-						<option>Wybierz przystanek</option>
+						<option value = "null">Wybierz przystanek</option>
 						<option value = "pkp">Dworzec PKP</option>
 						<option value = "szpital">Szpital</option>
 						<option value = "malcuzynskiego">Małcużyńskiego</option>
@@ -81,28 +84,34 @@
 						<option value = "towarowa">Towarowa</option>
 						<option value = "rolnicza">Towarowa(Rolnicza)</option>
 					</select>
-					<select id="line">
-						<option>Wybierz linię</option>
-						<option value = "1" id="wyborLinia1">linia 1</option>
-						<option value = "2" id="wyborLinia2">linia 2</option>
-						<option value = "3" id="wyborLinia3">linia 3</option>
-					</select>
 					<select id="direction">
-						<option>Wybierz kierunek</option>
+						<option value = "null">Wybierz kierunek</option>
 						<option value = "pkp">Dworzec PKP</option>
 						<option value = "szpital">Szpital</option>
-						<option value = "pkp">Towarowa</option>
-						<option value = "szpital">Towarowa->PKP</option>
+					</select>
+					<select id="line">
+						<option>Linia x</option>
 					</select>
 				</div>
-				<button id="check_bus" class="check_bus">sprawdź</button>
 			</section>
-			<section class="result">
-				<h3>najbliższy autobus tej linii odjeżdża o godzinie:</h3>
-				<h2 id="your_bus" class="your_time"></h2>	
-				<p id="period"></p>
-			</section>
-			<div id="whole_timetable" class="whole">	
+			<div class="result" id="result">
+				<div class="time">
+				  <h3 class="other_bus">Poprzedni odjazd:</h3>
+				  <h2 id="previous_bus" class="other_time"></h2>	
+				</div>
+				<div class="time" >
+				  <h3 class="current_bus">Najbliższy odjazd:</h3>
+				  <h2 id="your_bus" class="main_time"></h2>	
+				  <p id="period"></p>	
+				</div>
+				<div class="time">
+				  <h3 class="other_bus">Kolejny odjazd:</h3>
+				  <h2 id="next_bus" class="other_time"></h2>	
+				</div>
+			  </div>
+			  <div id="whole_timetable" class="whole">	
+				<button id="check_whole">Pokaż cały rozkład tego przystanku</button>
+				<button id="check_line">Pokaż mapę lini</button>
 			</div>
 			<div id="timetable_modal" class="modal">
 				<span class="close" id="close_modal">&times;</span>
@@ -112,13 +121,13 @@
 					</div>
 				</div>
 			</div>
-		</main>
+			<div id="line_modal" class="modal">
+				<span class="close" id="close_line">&times;</span>
+				<img src="img/linia1a.png" id="line_img" class="line_img">
+			</div>
+
 		<footer>
-			<!--
-			<h4>strona stworzona przez</h4>
-			<a href="https://www.facebook.com/wytvornia/" target="_blank"><img class="wytvornia_logo" src="img/wytvornia_awatar.png"></a> 
-			-->
-			<a href="https://giganciprogramowaniaformularz.edu.pl/app/ZapisyKoscierzyna" target="_blank"><img class="reklama" src="img/rakieta_reklama.jpg"></a>
+			</11><p>Strona wykonana przez Mikołaja Skrzypczaka na podstawie <a href="https://arturrymsza.github.io/km_koscierzyna/">strony pana Artura Rymszy</a></p>
 		</footer>
 		<div id="menusidenav" class="sidenav_menu">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

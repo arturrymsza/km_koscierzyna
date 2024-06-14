@@ -7,15 +7,16 @@
 
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-height: fit-content;
+  max-width: 1920px;
+  text-align: center;
   margin: 0 auto;
 }
 
 body {
   height: 100vh;
   font-family: 'Lato', sans-serif;
-  background: -webkit-gradient(linear, left bottom, left top, from(#4e4e4e), to(#222222));
-  background: linear-gradient(to top, #4e4e4e, #222222);
+  background: linear-gradient(to top, #000000, #006816);
   color: #3ba66d;
   overflow: hidden;
 }
@@ -151,27 +152,6 @@ body .check .check_bus {
   border-radius: 4px;
 }
 
-body .result {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .result h3 {
-  text-align: center;
-}
-
-body .result .your_time {
-  text-align: center;
-  font-size: 10vw;
-}
 
 @media (max-width: 768px) {
   body .result .your_time {
@@ -183,6 +163,7 @@ body .result .your_time {
 body .modal {
   display: none;
   position: fixed;
+  align-items: center;
   z-index: 1;
   left: 0;
   top: 0;
@@ -203,6 +184,7 @@ body .modal .bus_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -245,9 +227,10 @@ body .modal .bus_list .lines {
 body .modal .bus_list .hours {
   padding: 5px;
   color: #ffff66;
-  max-width: 100%;
+  max-width: 75%;
   display: block;
   word-break: break-all;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -277,7 +260,7 @@ body .whole {
           justify-content: center;
 }
 
-body .whole .check_all_button {
+body .whole button {
   background-color: transparent;
   border: 2px solid #ffff66;
   color: #ffff66;
@@ -598,15 +581,17 @@ body .line_plate .line_name {
 }
 
 body footer {
+  padding: 10px;
   width: 100vw;
   font-family: 'apropal', sans-serif;
   font-size: 1.5vh;
   color: white;
+  background-color: #3ba66d;
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: cover;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -619,27 +604,60 @@ body footer {
           align-items: center;
 }
 
-body footer .wytvornia_logo {
-  height: 6vh;
-  border-radius: 50%;
-  margin-left: 1vh;
+/* Create three equal columns that floats next to each other */
+.time {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+.current_bus{
+  font-size: 2.5vw;
+  color: rgb(0, 255, 85);
+}
+.main_time{
+  font-size: 5.5vw;
+  color: rgb(0, 255, 42);
+}
+.other_bus {
+  font-size: 1.5vw;
+  color: rgb(0, 87, 14);
+}
+.other_time{
+  font-size: 3vw;
+  color: rgb(0, 112, 24);
 }
 
-@media (max-width: 768px) and (max-height: 600px) {
-  body footer .reklama {
-    height: 10vh;
-  }
+/* Clear floats after the columns */
+.result:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.line_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
 }
 
-@media (max-width: 768px) and (min-height: 601px) {
-  body footer .reklama {
-    height: 16vh;
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .time {
+    width: 100%;
   }
-}
+  .current_bus{
+    font-size: 3.5vw;
+  }
+  .main_time{
+    font-size: 7.5vw;
+  }
+  .other_bus {
+    font-size: 2.5vw;
+  }
+  .other_time{
+    font-size: 6vw;
+  }
 
-@media (min-width: 769px) {
-  body footer .reklama {
-    height: 10vh;
-  }
 }
 /*# sourceMappingURL=style.css.map */
