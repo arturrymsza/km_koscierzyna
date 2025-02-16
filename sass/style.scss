@@ -457,10 +457,13 @@ body {
 		
 		.reklama{		
 			@media (max-width: 768px) {
-				@media (max-height: 600px) {
+				@media (max-height: 550px) {
+					display: none;
+				}
+				@media (max-height: 620px) {
 					height: 10vh;
 				}
-				@media (min-height: 601px) {
+				@media (min-height: 621px) {
 					height: 16vh;
 				}
 	    	}
