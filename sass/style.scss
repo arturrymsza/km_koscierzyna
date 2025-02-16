@@ -457,9 +457,6 @@ body {
 		
 		.reklama{		
 			@media (max-width: 768px) {
-				@media (max-height: 550px) {
-					display: none;
-				}
 				@media (max-height: 620px) {
 					height: 10vh;
 				}
